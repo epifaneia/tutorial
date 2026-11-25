@@ -1,0 +1,1991 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viaje por la IA · Curso gratuito de IA en el trabajo, por roles</title>
+<meta name="description" content="Curso online gratuito y sin registro: cómo usar la IA en tu trabajo y cómo hacerlo sin poner en riesgo los datos. Cinco paradas, cinco roles, una hora.">
+<meta name="author" content="epifaneia.dev">
+<meta name="theme-color" content="#f5efe6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Viaje por la IA · Curso gratuito de IA en el trabajo, por roles">
+<meta property="og:description" content="Formación online en cinco paradas: cómo sacarle todo el partido a la IA y cómo hacerlo sin poner en riesgo los datos, desde tu rol.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://epifaneia.dev/tutorial/">
+<meta property="og:site_name" content="epifaneia.dev">
+<meta property="og:image" content="https://epifaneia.dev/tutorial/img/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Viaje por la IA: los cinco personajes del curso, uno por rol">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://epifaneia.dev/tutorial/img/compartir.jpg">
+<link rel="canonical" href="https://epifaneia.dev/tutorial/">
+<link rel="alternate" hreflang="es" href="https://epifaneia.dev/tutorial/">
+<link rel="alternate" hreflang="en" href="https://epifaneia.dev/tutorial/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://epifaneia.dev/tutorial/">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icono-32.png">
+<link rel="apple-touch-icon" href="img/icono-180.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"Viaje por la IA","alternateName":"A Journey Through AI",
+ "description":"Curso online gratuito y sin registro sobre cómo usar la IA en el trabajo y cómo hacerlo sin poner en riesgo los datos. Cinco paradas (el chat, la herramienta para una tarea, la IA conectada a los datos de la empresa, los agentes y la herramienta a medida) y cinco roles: Empleado, Management, Data analysis, Marketing e IT.",
+ "url":"https://epifaneia.dev/tutorial/","inLanguage":["es","en"],"isAccessibleForFree":true,
+ "provider":{"@type":"Person","name":"Daniel Martín","url":"https://epifaneia.dev/"},
+ "audience":{"@type":"Audience","audienceType":"Personas que trabajan en empresas, sin formación previa en IA"},
+ "teaches":["Uso de la IA generativa en el trabajo","Protección de datos al usar IA","Reglamento europeo de IA: alfabetización (art. 4)"],
+ "hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT1H"},
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","category":"Free"}}
+</script>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Fuentes servidas desde esta web (licencia OFL, en fonts/OFL.txt): sin peticiones a terceros */
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Gochi Hand'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/gochi-hand-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/inter-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(fonts/inter-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(fonts/inter-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+:root{
+  --papel:#f5efe6; --tarjeta:#fffaf3; --tinta:#1e2230; --suave:#6b6558; --linea:#e3d9c9;
+  --camino:#e9dcc6; --camino-borde:#d8c6a8;
+  --ok:#2f8f57; --ko:#b8432f; --oro:#e0a526; --gris-estrella:#d9cfbf;
+  --rol:#9a7b55;
+  --radio:18px;
+  --sombra:0 1px 0 rgba(30,34,48,.04), 0 8px 24px -12px rgba(30,34,48,.18);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",Inter,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.envoltura{max-width:1080px;margin:0 auto;padding:0 16px}
+[hidden]{display:none!important}
+
+/* ---------- Insignia de rol (arriba a la derecha) ---------- */
+.insignia{position:fixed;top:12px;right:12px;z-index:50;display:flex;align-items:center;gap:8px}
+.idiomas{display:flex;background:var(--tarjeta);border:2px solid var(--linea);border-radius:999px;padding:3px;box-shadow:var(--sombra)}
+.idiomas button{border:0;background:none;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--suave)}
+.idiomas button[aria-pressed="true"]{background:var(--tinta);color:#fff}
+.idiomas button:focus-visible{outline:2px solid var(--rol);outline-offset:1px}
+.insignia-boton{display:flex;align-items:center;gap:10px;background:var(--tarjeta);border:2px solid var(--rol);border-radius:999px;padding:4px 14px 4px 4px;box-shadow:var(--sombra);transition:transform .15s}
+.insignia-boton:hover{transform:translateY(-1px)}
+.insignia-foto{width:56px;height:56px;border-radius:50%;background:color-mix(in srgb,var(--rol) 14%,#fff);display:grid;place-items:center;overflow:hidden}
+.insignia-foto img{height:52px;width:auto;object-fit:contain;transition:transform .25s}
+.insignia.reacciona .insignia-foto img{transform:scale(1.12) rotate(-4deg)}
+.insignia-texto{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.insignia-texto small{font-size:11px;color:var(--suave);text-transform:uppercase;letter-spacing:.06em}
+.insignia-texto strong{font-size:15px}
+.insignia-menu{position:absolute;right:0;top:calc(100% + 8px);background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;box-shadow:var(--sombra);padding:6px;min-width:240px;display:none}
+.insignia.abierta .insignia-menu{display:block}
+.insignia-menu button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:6px 10px;border-radius:12px;text-align:left}
+.insignia-menu button:hover,.insignia-menu button[aria-checked="true"]{background:color-mix(in srgb,var(--c) 12%,transparent)}
+.insignia-menu img{width:38px;height:38px;object-fit:contain}
+.insignia-menu span small{display:block;font-size:12px;color:var(--suave)}
+/* Aviso único: todos somos empleados */
+.insignia-boton{position:relative}
+.insignia.con-aviso .insignia-boton::after{content:"!";position:absolute;top:-5px;left:-5px;width:24px;height:24px;border-radius:50%;background:var(--oro);color:var(--tinta);font:800 15px/20px "Bricolage Grotesque",sans-serif;text-align:center;border:2px solid var(--papel);box-shadow:var(--sombra)}
+.aviso-emp{padding:10px 12px 12px;margin-bottom:6px;border-bottom:1px solid var(--linea);max-width:300px}
+.aviso-emp strong{display:block;font:800 17px/1.2 "Bricolage Grotesque",sans-serif;margin-bottom:4px}
+.aviso-emp p{margin:0 0 10px;font-size:14px;color:var(--suave)}
+.insignia-menu .aviso-emp .acciones{display:flex;gap:8px;flex-wrap:wrap}
+.insignia-menu .aviso-emp .acciones button{width:auto;display:inline-block;padding:6px 12px;border-radius:999px;font-size:13.5px;font-weight:600;border:2px solid var(--tinta);background:var(--tinta);color:#fff}
+.insignia-menu .aviso-emp .acciones button.sec{background:none;color:var(--tinta)}
+
+/* ---------- Vista tablero ---------- */
+.vista{animation:aparece .35s ease both}
+@keyframes aparece{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cabecera{padding-top:28px;padding-bottom:10px}
+.cabecera>*{max-width:calc(100% - 270px)}
+.cabecera h1{font-size:clamp(34px,5.4vw,58px);font-weight:800;letter-spacing:-.02em}
+.cabecera p{font-size:clamp(16px,2vw,19px);color:var(--suave);margin:8px 0 0;max-width:52ch}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+
+.marco-tablero{margin:18px 0 8px;border-radius:28px;background:#efe4d2;border:1px solid var(--linea);box-shadow:var(--sombra);overflow:hidden;
+  width:min(1400px,calc(100vw - 32px));margin-left:calc(50% - min(700px,50vw - 16px))}
+/* El mapa es una ilustración; encima van las paradas (círculo y cartel) en % de la imagen. */
+.tablero{position:relative;width:100%;aspect-ratio:var(--ratio);background:var(--mapa) center/100% 100% no-repeat;container-type:inline-size;transform-origin:50% 50%;transition:transform .6s cubic-bezier(.6,0,.3,1),opacity .6s ease}
+.tablero.zoom{transform:scale(4);opacity:0}
+.tablero.sin-transicion{transition:none}
+.nodo{position:absolute;transform:translate(-50%,-50%);aspect-ratio:1;border-radius:50%;border:0;padding:0;background:none;z-index:2}
+.nodo-aro{position:absolute;inset:-5%;border-radius:50%;border:3px solid transparent;transition:border-color .15s,box-shadow .15s,transform .15s}
+.nodo:hover .nodo-aro,.nodo:focus-visible .nodo-aro{border-color:#fff;box-shadow:0 0 0 3px var(--rol);transform:scale(1.04)}
+.nodo:focus-visible{outline:none}
+.nodo.completa .nodo-aro{border-color:var(--oro);box-shadow:0 0 0 2px #fff}
+.nodo.aqui .nodo-aro{border-color:var(--rol)}
+.nodo.bloqueada{cursor:not-allowed}
+.nodo.bloqueada::before{content:"";position:absolute;inset:0;border-radius:50%;background:rgba(245,239,230,.55)}
+.nodo.bloqueada:hover .nodo-aro{transform:none;box-shadow:none;border-color:transparent}
+.nodo .candado{position:absolute;bottom:-4%;right:-4%;width:34%;height:34%;min-width:22px;min-height:22px;border-radius:50%;background:var(--tinta);display:grid;place-items:center;border:2px solid var(--papel)}
+.nodo .candado svg{width:50%;height:50%;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round}
+.nodo.sacude{animation:sacude2 .35s}
+@keyframes sacude2{25%{transform:translate(calc(-50% - 5px),-50%)}75%{transform:translate(calc(-50% + 5px),-50%)}}
+.rotulo{position:absolute;z-index:2;background:var(--tarjeta);border:0;border-radius:clamp(8px,1cqw,14px);padding:.45em .65em;text-align:center;line-height:1.2;box-shadow:0 4px 12px -6px rgba(30,34,48,.35);font-size:var(--fs);display:flex;flex-direction:column;justify-content:center;gap:.15em;cursor:pointer;color:var(--tinta)}
+.rotulo strong{font:700 1em/1.15 Inter,sans-serif}
+.rotulo small{font-size:.86em;color:var(--suave)}
+.rotulo.bloqueada{cursor:not-allowed;color:#7d7566}
+.medias{display:inline-flex;gap:2px;margin-left:4px;vertical-align:-1px}
+.medias i{width:.7em;height:.7em;border-radius:50%;background:var(--gris-estrella)}
+.medias i.si{background:var(--oro)}
+@keyframes sacude{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.ficha{position:absolute;transform:translate(-50%,-100%);pointer-events:none;transition:left .7s cubic-bezier(.5,-0.3,.4,1.3),top .7s cubic-bezier(.5,-0.3,.4,1.3);filter:drop-shadow(0 4px 3px rgba(30,34,48,.35));z-index:3}
+.ficha img{width:100%}
+
+/* ---------- Marcador ---------- */
+.titulo-seccion{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:36px 0 14px}
+.titulo-seccion h2{font-size:clamp(24px,3vw,32px);font-weight:800}
+.titulo-seccion p{margin:0;color:var(--suave)}
+.marcador{display:grid;gap:10px}
+.fila{display:grid;grid-template-columns:52px 1fr auto 64px;gap:14px;align-items:center;background:var(--tarjeta);border-radius:14px;padding:8px 14px;box-shadow:var(--sombra);border:2px solid transparent}
+.fila.actual{border-color:var(--c)}
+.fila img{height:48px;width:auto;justify-self:center}
+.fila .nombre{font-weight:600}
+.fila .nombre small{display:block;font-weight:400;color:var(--suave);font-size:12px}
+.estrellas{display:flex;gap:2px}
+.estrellas svg{width:26px;height:26px}
+.pct{font:800 22px "Bricolage Grotesque",sans-serif;text-align:right}
+.barra{grid-column:2/-1;height:6px;background:var(--linea);border-radius:3px;overflow:hidden;margin-top:-4px}
+.barra i{display:block;height:100%;background:var(--c)}
+.reiniciar{margin-top:16px;background:none;border:0;color:var(--suave);text-decoration:underline;font-size:14px}
+
+/* ---------- Vista casilla ---------- */
+.barra-casilla{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--papel) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--linea)}
+.barra-casilla .envoltura{display:flex;align-items:center;gap:14px;min-height:80px;padding-right:280px}
+.volver{display:flex;align-items:center;gap:8px;background:var(--tarjeta);border:2px solid var(--tinta);border-radius:999px;padding:7px 14px 7px 10px;font-weight:600;font-size:14px}
+.migas{display:flex;gap:6px;align-items:center}
+.migas button{width:28px;height:28px;border-radius:50%;border:2px solid var(--linea);background:var(--tarjeta);font-size:12px;font-weight:700;display:grid;place-items:center;padding:0}
+.migas button[aria-current="step"]{background:var(--rol);border-color:var(--rol);color:#fff}
+.migas button.completa{border-color:var(--oro)}
+.migas button:disabled{opacity:.4;cursor:not-allowed}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.aviso-bloqueo{font-size:14px;color:var(--suave);margin:8px 0 0;width:100%;text-align:right}
+.casilla-cab{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:28px 0 8px}
+.casilla-cab .disco-grande{width:84px;height:84px;border-radius:50%;background:var(--tarjeta);border:4px solid var(--tinta);display:grid;place-items:center;box-shadow:0 5px 0 var(--tinta)}
+.casilla-cab .disco-grande svg{width:44%;height:44%;stroke:var(--tinta);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.casilla-cab h1{font-size:clamp(30px,4.6vw,48px);font-weight:800;letter-spacing:-.015em;margin:4px 0 6px}
+.casilla-cab p{margin:0;color:var(--suave);max-width:68ch;font-size:17px}
+.hoja{background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden;margin:18px 0 0}
+.pestanas{display:flex;gap:6px;padding:12px 16px 0;border-bottom:1px solid var(--linea)}
+.pestana{background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;font-weight:600;display:flex;align-items:center;gap:8px;color:var(--suave)}
+.pestana[aria-selected="true"]{color:var(--tinta);border-bottom-color:var(--rol)}
+/* Media estrella: la mitad izquierda es «Sacarle partido»; la derecha, «Hacerlo seguro». */
+.media{display:inline-flex;width:22px;height:22px;flex:none;vertical-align:-5px}
+.media svg{width:100%;height:100%;overflow:visible}
+.media.pega svg{animation:pegar .75s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes pegar{0%{transform:scale(2.8) rotate(-28deg);opacity:0}55%{transform:scale(.88) rotate(5deg);opacity:1}78%{transform:scale(1.08) rotate(-2deg)}100%{transform:none}}
+.examen-cab .media{margin-right:4px}
+.resultado .media{width:54px;height:54px;margin-left:auto}
+.bien .ono .media{width:62px;height:62px;vertical-align:middle}
+.bloque-examen{position:relative}
+/* Pase a otro rol: «esto lo verás en el viaje de…» */
+.pase{text-decoration:underline dashed color-mix(in srgb,var(--rol) 75%,transparent);text-underline-offset:3px;text-decoration-thickness:1.5px;cursor:help;border-radius:3px}
+.panel{padding:22px 22px 26px}
+.bloque{margin-top:28px}
+.bloque:first-child{margin-top:0}
+.bloque h4{font-size:14px;font-weight:600;font-family:Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--suave);margin-bottom:12px}
+.pie-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:26px 0 60px}
+.pie-nav .btn{display:flex;align-items:center;gap:8px}
+
+/* Intro */
+.plan{font-size:19px;max-width:64ch;margin:0}
+.reglas{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:r}
+.reglas li{counter-increment:r;display:grid;grid-template-columns:40px 1fr;gap:12px;font-size:17px}
+.reglas li::before{content:counter(r);font:800 26px/1 "Bricolage Grotesque",sans-serif;color:var(--rol)}
+.trajes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.traje{background:#fff;border:2px solid var(--linea);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;text-align:left}
+.traje[aria-pressed="true"]{border-color:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 25%,transparent)}
+.traje-img{height:150px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 10%,#fff);border-radius:12px}
+.traje-img img{max-height:140px;width:auto}
+.traje h3{font-size:20px}
+.traje .traje-sombrero{font-size:13px;color:var(--suave);margin-top:-4px}
+.traje dl{margin:0;font-size:13.5px}
+.traje dt{font-weight:600;margin-top:6px;color:var(--c)}
+.traje dd{margin:0}
+.traje .etiqueta{align-self:flex-start;font-size:11px;font-weight:600;background:#fff1d6;color:#8a5a00;border-radius:999px;padding:2px 8px}
+.traje .accion{margin-top:auto;font-size:13px;font-weight:600;color:var(--c)}
+
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.pregunta:focus,.explica:focus,.resultado:focus{outline:2px solid var(--rol);outline-offset:4px;border-radius:6px}
+/* Justificante de formación */
+.justificante{border:2px solid var(--tinta);border-radius:14px;padding:18px 20px;background:#fff}
+.justificante h3{font-size:20px;margin-bottom:4px}
+.justificante .aviso{font-size:13px;color:var(--suave);margin:0 0 14px}
+.justificante label{display:block;font-size:13px;font-weight:600;margin-bottom:4px}
+.justificante input{font:inherit;width:100%;max-width:360px;padding:8px 10px;border:2px solid var(--linea);border-radius:8px}
+.justificante table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.justificante th,.justificante td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--linea)}
+.justificante .pie-just{font-size:12.5px;color:var(--suave);margin:0}
+.revisado{font-size:13px}
+@media print{
+  body:not(.imprime-diploma) *{visibility:hidden!important}
+  body:not(.imprime-diploma) #justificante,body:not(.imprime-diploma) #justificante *{visibility:visible!important}
+  #justificante{position:absolute;left:0;top:0;width:100%;border:0}
+  #justificante .no-imprimir{display:none!important}
+}
+/* Aviso por rol (Management, IT): este viaje no basta para cargar solo con el diseño */
+.aviso-fecha{display:flex;gap:12px;align-items:flex-start;margin:0 0 22px;padding:12px 16px;border:2px dashed var(--suave);border-radius:12px;background:var(--tarjeta);font-size:15px;max-width:78ch}
+.aviso-fecha>span{font-size:22px;line-height:1.2}
+.aviso-fecha p{margin:0}
+.aviso-rol{margin:0 0 20px;padding:12px 16px;border-left:4px solid var(--oro);background:#fff8e6;border-radius:0 12px 12px 0;font-size:15.5px;max-width:78ch}
+.aviso-rol > strong{display:block;margin-bottom:3px;font:800 16px/1.2 "Bricolage Grotesque",sans-serif}
+.aviso-rol a{font-weight:600}
+.aviso-rol.breve{font-size:14px;padding:8px 14px;color:var(--suave)}
+.trajes{grid-template-columns:repeat(5,1fr)}
+@media (max-width:1000px){.trajes{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.trajes{grid-template-columns:1fr}}
+.traje:has(.traje-elegir[aria-pressed="true"]){border-color:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 25%,transparent)}
+.traje-elegir{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:10px;width:100%}
+.traje-elegir:focus-visible{outline:3px solid var(--c);outline-offset:5px;border-radius:10px}
+.traje-txt{display:flex;flex-direction:column;gap:4px}
+.traje-nombre{font:800 20px/1.1 "Bricolage Grotesque",Inter,sans-serif}
+.traje .traje-sombrero{margin-top:0}
+.traje-corto{font-size:14.5px;line-height:1.4}
+.traje-tiempo{font-size:13px;font-weight:600;color:var(--suave)}
+.traje dt,.traje .accion{color:color-mix(in srgb,var(--c) 72%,#000)}
+.traje .accion{margin-top:6px}
+.traje-mas{font-size:13.5px;border-top:1px solid var(--linea);padding-top:8px;margin-top:auto}
+.traje-mas summary{cursor:pointer;font-weight:600;color:var(--suave);padding:4px 0}
+@media (max-width:640px){.traje-elegir{flex-direction:row;align-items:center;gap:14px}.traje-elegir .traje-img{height:104px;width:92px;flex:none}.traje-elegir .traje-img img{max-height:96px}}
+.plan-nota{color:var(--suave);max-width:70ch;margin:10px 0 0}
+.antes{margin:14px 0 0;padding-left:20px;color:var(--suave);font-size:15px;max-width:74ch}
+.antes li{margin-bottom:4px}
+.autor{color:var(--suave);font-size:15px;margin:22px 0 0}
+.autor a{font-weight:600}
+.pest-min{font-weight:500;font-size:12.5px;color:var(--suave);margin-left:2px;white-space:nowrap}
+.qa-llano .qa-rol{margin-top:0!important}
+.qa-llano .qa-comun{margin-top:10px}
+.qa-mas{margin-top:8px;font-size:14.5px}
+.qa-mas summary{cursor:pointer;font-weight:600;color:var(--suave);font-size:13.5px;padding:4px 0}
+.qa-mas p{margin:6px 0 0;color:var(--suave)}
+.al-dia{margin:14px 0 0;padding:10px 14px;border:1px dashed var(--suave);border-radius:10px;font-size:14px;color:var(--suave);max-width:86ch}
+.nadie{color:var(--suave)}
+details.al-dia summary{cursor:pointer;font-weight:600}
+details.al-dia p{margin:8px 0 0}
+.glosario-lista{margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 18px}
+.glosario-lista div{background:#fff;border:1px solid var(--linea);border-radius:12px;padding:10px 14px}
+.glosario-lista dt{font:800 17px/1.2 "Bricolage Grotesque",Inter,sans-serif;margin-bottom:2px}
+.glosario-lista dd{margin:0;font-size:15px}
+@media (max-width:720px){.glosario-lista{grid-template-columns:1fr}}
+.cambios{margin:0;padding-left:20px;max-width:76ch}
+.cambios li{margin-bottom:5px}
+#casilla h1:focus{outline:none}
+.vineta.intruso .vineta-img .quien{top:auto;bottom:6px}
+.otro em{color:color-mix(in srgb,var(--c) 72%,#000)}
+.llevas b{background:color-mix(in srgb,var(--rol) 78%,#000)}
+.dip-kicker{color:#8a6410}
+.idiomas button{padding:8px 11px;min-height:36px}
+.reiniciar{padding:10px 0}
+.num-vineta,.vineta .quien,.qa-rol .etq{font-size:12px}
+@media (max-width:720px){.rotulo strong{font-size:max(1em,12px)}.rotulo small{font-size:max(.86em,11px)}}
+.traje .aviso-corto{display:block;margin-top:8px;font-size:12.5px;line-height:1.35;color:var(--suave)}
+/* Lo que te llevas */
+.llevas{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.llevas li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;padding:10px 14px;background:#fff;border:1px solid var(--linea);border-radius:12px}
+.llevas b{font:800 13px/1 "Bricolage Grotesque",sans-serif;color:#fff;background:var(--rol);border-radius:999px;padding:5px 9px}
+/* Diploma: chulo y grande; el aviso, debajo */
+.diploma-zona{display:grid;gap:12px;max-width:1000px;container:dip/inline-size}
+.diploma-zona label{font-size:13px;font-weight:600}
+.diploma-zona input{font:inherit;width:100%;max-width:360px;padding:8px 10px;border:2px solid var(--linea);border-radius:8px}
+.diploma{--azul:#1f3a5c;--oro1:#f6dc86;--oro2:#c8962c;position:relative;aspect-ratio:297/210;width:100%;max-width:1000px;background:#fffdf7;border:3px solid var(--tinta);border-radius:6px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(30,34,48,.55);color:var(--tinta)}
+.diploma::before{content:"";position:absolute;inset:2.2cqw;border:.35cqw solid var(--oro2);outline:.12cqw solid var(--oro2);outline-offset:.55cqw;pointer-events:none;z-index:2}
+.dip-banda{position:absolute;top:0;bottom:0;right:0;width:27%;background:repeating-linear-gradient(135deg,#ffffff08 0 .5cqw,#0000 .5cqw 1.1cqw),var(--azul)}
+.dip-banda::before{content:"";position:absolute;left:0;top:0;bottom:0;width:.7cqw;background:linear-gradient(var(--oro1),var(--oro2),var(--oro1))}
+.dip-cuerpo{position:absolute;left:6%;top:5%;right:31%;bottom:6%;display:flex;flex-direction:column;z-index:1}
+.dip-pjs{display:flex;align-items:flex-end;gap:.6cqw;height:14cqw}
+.dip-pjs img{height:100%;width:auto;max-width:calc((100% - (var(--n,1) - 1) * .6cqw) / var(--n,1));object-fit:contain;object-position:bottom;filter:drop-shadow(0 .4cqw .3cqw rgba(30,34,48,.18))}
+.dip-kicker{margin:1.6cqw 0 0;font:600 1.5cqw/1 Inter,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--oro2)}
+.dip-titulo{margin:.6cqw 0 0;font:800 8.4cqw/.95 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.dip-se{margin:2.2cqw 0 0;font:500 1.8cqw/1.2 Inter,sans-serif;color:var(--suave)}
+.dip-nombre{margin:.5cqw 0 0;font:400 4.4cqw/1.15 "Gochi Hand",cursive;letter-spacing:.06em;border-bottom:.18cqw solid var(--tinta);padding-bottom:.4cqw;min-height:4.4cqw}
+.dip-titulo.largo{font-size:5.4cqw;line-height:1}
+.dip-nombre.largo{font-size:3.2cqw}.dip-nombre.muy-largo{font-size:2.5cqw}
+.dip-texto{margin:1.8cqw 0 0;font:400 1.95cqw/1.45 Inter,sans-serif;max-width:52ch}
+.dip-texto strong{font-weight:600}
+.dip-estrellas{display:flex;gap:.9cqw;margin-top:2.2cqw}
+.dip-estrellas svg{width:3.8cqw;height:3.8cqw}
+
+.dip-firma{margin-top:auto;display:flex;gap:3cqw;font:600 1.35cqw/1.2 Inter,sans-serif;color:var(--suave)}
+.dip-firma span{border-top:.12cqw solid var(--suave);padding-top:.5cqw;min-width:14cqw}
+.dip-sello{position:absolute;right:13.5%;top:50%;width:22%;transform:translate(50%,-46%);z-index:3;filter:drop-shadow(0 .8cqw .8cqw rgba(0,0,0,.28))}
+.dip-sello svg,.dip-sello img{width:100%;height:auto;display:block}
+.dip-aviso{margin:0;font-size:12.5px;color:var(--suave);max-width:80ch}
+@container dip (max-width:640px){
+  .diploma{aspect-ratio:auto}
+  .diploma::before{inset:8px;border-width:2px;outline-width:1px;outline-offset:3px}
+  .dip-banda{top:auto;left:0;width:auto;height:14px}
+  .dip-banda::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px}
+  .dip-cuerpo{position:relative;inset:auto;padding:26px 22px 152px}
+  .dip-pjs{height:64px;gap:4px}
+  .dip-kicker{margin-top:12px;font-size:10px}
+  .dip-titulo{font-size:42px}
+  .dip-titulo.largo{font-size:30px}
+  .dip-se{margin-top:12px;font-size:12px}
+  .dip-nombre{font-size:24px;min-height:30px;border-bottom-width:1px}
+  .dip-nombre.largo{font-size:20px}.dip-nombre.muy-largo{font-size:17px}
+  .dip-texto{margin-top:10px;font-size:14px}
+  .dip-estrellas{gap:6px;margin-top:12px}.dip-estrellas svg{width:20px;height:20px}
+  .dip-firma{margin-top:16px;gap:16px;font-size:11px}.dip-firma span{min-width:0;border-top-width:1px;padding-top:4px}
+  .dip-sello{right:18px;top:auto;bottom:22px;width:96px;transform:none}
+}/* Confeti */
+.confeti{position:fixed;inset:0;pointer-events:none;z-index:95;overflow:hidden}
+.confeti i{position:absolute;top:-24px;width:9px;height:15px;border-radius:2px;animation:caer var(--t) var(--d) cubic-bezier(.25,.6,.45,1) forwards}
+.confeti i:nth-child(3n){width:12px;height:7px}
+.confeti i:nth-child(5n){border-radius:50%;width:9px;height:9px}
+@keyframes caer{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(var(--x),112vh) rotate(var(--r))}}
+/* Impresión del diploma: solo el diploma, A4 apaisado, con sus colores */
+#impresion{display:none}
+@media print{
+  body.imprime-diploma > *:not(#impresion){display:none!important}
+  body.imprime-diploma #impresion{display:block!important;visibility:visible!important}
+  body.imprime-diploma #impresion *{visibility:visible!important}
+  body.imprime-diploma #impresion .diploma{width:277mm;max-width:none;height:190mm;aspect-ratio:auto;box-shadow:none}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+/* Glosario */
+.termino{text-decoration:underline dotted color-mix(in srgb,var(--tinta) 55%,transparent);text-underline-offset:3px;text-decoration-thickness:1.5px;cursor:help;border-radius:3px}
+.termino:focus-visible{outline:2px solid var(--rol);outline-offset:1px}
+@media (hover:none){.termino{cursor:pointer;padding:3px 0}}
+#globo{position:fixed;z-index:80;max-width:280px;background:var(--tinta);color:#fff;font:400 13.5px/1.45 Inter,sans-serif;padding:9px 12px;border-radius:10px;box-shadow:0 10px 30px -10px rgba(0,0,0,.45);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
+#globo.visible{opacity:1;transform:none}
+#globo strong{display:block;font-weight:600;margin-bottom:2px}
+/* Ejemplo práctico (viñetas) */
+.tira{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+/* Fondos: trama de puntos del rol en las neutras; rayos cálidos en la explosión; rayos dorados en el final feliz */
+.vineta{position:relative;background:radial-gradient(rgba(30,34,48,.13) 1.4px,transparent 1.6px) 0 0/10px 10px,linear-gradient(#fffaf3,#fff);background:radial-gradient(color-mix(in srgb,var(--rol) 22%,transparent) 1.4px,transparent 1.6px) 0 0/10px 10px,linear-gradient(#fffaf3,#fff);border:2.5px solid var(--tinta);border-radius:6px;padding:12px 12px 0;display:flex;flex-direction:column;min-height:300px;overflow:hidden}
+.vineta.auditor{background:radial-gradient(rgba(30,34,48,.14) 1.4px,transparent 1.6px) 0 0/10px 10px,#f7f3ea;background:radial-gradient(color-mix(in srgb,var(--tinta) 14%,transparent) 1.4px,transparent 1.6px) 0 0/10px 10px,#f7f3ea}
+.vineta.vineta-final{background:repeating-conic-gradient(from 0deg at 50% 78%,#ffe7b8 0 6deg,#fff3da 6deg 12deg)}
+.vineta-img{position:relative}
+.vineta-img::before{content:"";position:absolute;left:50%;bottom:4px;width:min(130px,70%);height:14px;transform:translateX(-50%);background:radial-gradient(#1e223040,transparent 70%);z-index:0}
+.vineta-img img{position:relative;z-index:1}
+.vineta-img .quien{right:-4px;bottom:6px}
+/* Ataque: el intruso sale con su saco. No habla; lo que ha hecho lo cuenta el pie. */
+.vineta.intruso{background:repeating-linear-gradient(135deg,#ece7dd 0 14px,#e2dccf 14px 28px)}
+.vineta.intruso .pie{background:#2a2f3f;color:#fff}
+.vineta.intruso .quien{background:#b8432f;top:8px;bottom:auto}
+/* Con cinco o seis viñetas, tres por fila: más anchas, para que quepa el texto */
+@media (min-width:721px){.tira:has(.vineta:nth-child(5)){grid-template-columns:repeat(3,1fr)}}
+.bocadillo{position:relative;background:#fff;border:2px solid var(--tinta);border-radius:16px;padding:8px 12px;font:400 18px/1.3 "Gochi Hand",cursive;letter-spacing:.05em;margin-bottom:14px}
+.bocadillo::after{content:"";position:absolute;left:46%;bottom:-11px;width:16px;height:16px;background:#fff;border-right:2px solid var(--tinta);border-bottom:2px solid var(--tinta);transform:rotate(45deg) skew(8deg,8deg)}
+.vineta-img{margin-top:auto;display:flex;justify-content:center;align-items:flex-end}
+.vineta-img img{max-height:170px;width:auto}
+.vineta .quien{position:absolute;right:8px;bottom:8px;z-index:2;font-size:11px;font-weight:600;background:var(--tinta);color:#fff;border-radius:4px;padding:1px 6px}
+.vineta .pie{background:#fde9a8;border-top:2px solid var(--tinta);margin:10px -12px 0;padding:7px 12px;font:600 14.5px/1.3 "Bricolage Grotesque",sans-serif}
+/* Hilo entre paradas: «lo retomamos en…» / «viene de…» */
+.retoma{position:relative;order:-1;align-self:flex-start;margin:-4px 0 8px -4px;z-index:3;max-width:calc(100% + 8px);font:600 11.5px/1.25 Inter,sans-serif;background:var(--oro);color:var(--tinta);border:2px solid var(--tinta);border-radius:999px;padding:2px 9px;box-shadow:2px 2px 0 var(--tinta);text-align:left}
+button.retoma{cursor:pointer}
+button.retoma:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--tinta)}
+.num-vineta{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:600;color:var(--suave)}
+
+/* Ideas fuerza */
+.ideas{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:idea}
+.ideas li{counter-increment:idea;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;font-size:18px;font-weight:500}
+.ideas li::before{content:counter(idea);font:800 26px/1 "Bricolage Grotesque",sans-serif;color:var(--rol)}
+
+/* Examen */
+.examen{position:relative;background:color-mix(in srgb,var(--rol) 7%,#fff);border:1px solid color-mix(in srgb,var(--rol) 25%,var(--linea));border-radius:16px;padding:18px}
+.examen-cab{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.examen-cab strong{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+.progreso{display:flex;gap:5px}
+.progreso i{width:22px;height:6px;border-radius:3px;background:var(--linea)}
+.progreso i.ok{background:var(--ok)} .progreso i.ko{background:var(--ko)} .progreso i.ahora{background:var(--tinta)}
+.pregunta{font-size:18px;font-weight:600;margin:4px 0 14px}
+.opciones{display:grid;gap:8px}
+.opcion{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;text-align:left;background:#fff;border:2px solid var(--linea);border-radius:12px;padding:10px 12px}
+.opcion:hover:not(:disabled){border-color:var(--rol)}
+.opcion:disabled{cursor:default}
+.opcion .letra{width:26px;height:26px;border-radius:50%;border:2px solid var(--linea);display:grid;place-items:center;font-size:13px;font-weight:600}
+.opcion.ok{border-color:var(--ok);background:#eef8f1} .opcion.ok .letra{background:var(--ok);border-color:var(--ok);color:#fff}
+.opcion.ko{border-color:var(--ko);background:#fbeeeb} .opcion.ko .letra{background:var(--ko);border-color:var(--ko);color:#fff}
+.explica{margin-top:12px;padding:10px 12px;border-left:4px solid var(--rol);background:#fff;border-radius:0 10px 10px 0}
+.botones{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{border:0;border-radius:999px;padding:10px 18px;font-weight:600;background:var(--tinta);color:#fff}
+.btn.sec{background:transparent;color:var(--tinta);border:2px solid var(--tinta)}
+.resultado{display:flex;gap:16px;align-items:center}
+.aviso-repetir{margin-top:14px;padding:10px 14px;border-left:4px solid var(--ko);background:color-mix(in srgb,var(--ko) 9%,#fff);border-radius:0 8px 8px 0}
+.resultado img{height:120px;width:auto}
+.resultado .nota{font:800 40px/1 "Bricolage Grotesque",sans-serif}
+
+/* Marco y enlaces */
+.marco{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.marco span{font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:6px;background:var(--tinta);color:#fff}
+.enlaces{margin:0;padding-left:18px}
+.enlaces li{margin:4px 0}
+.qa-empresa{margin-top:8px!important;padding:8px 10px;border-left:4px solid var(--tinta);background:#f4f4f2;border-radius:0 8px 8px 0}
+.qa-empresa span.cab{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);margin-bottom:2px}
+.empresa-lista{margin:6px 0 0;padding-left:20px}
+.empresa-lista li{margin:2px 0}
+.sello{font-size:11px;font-weight:600;letter-spacing:.04em;background:var(--tinta);color:#fff;border-radius:4px;padding:1px 6px;vertical-align:1px}
+.enlaces a{text-decoration-color:color-mix(in srgb,var(--rol) 60%,transparent);text-underline-offset:3px}
+
+/* Pendiente */
+.pendiente{border:2px dashed var(--linea);border-radius:14px;padding:16px 18px;background:repeating-linear-gradient(-45deg,transparent 0 12px,rgba(0,0,0,.015) 12px 24px)}
+.pendiente strong{display:block;margin-bottom:6px}
+.pendiente ul{margin:6px 0 0;padding-left:20px;color:var(--suave)}
+
+/* Preguntas de cada parada */
+.qas{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (max-width:720px){.qas{grid-template-columns:1fr}}
+.qa{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:14px 16px}
+.qa h5{margin:0 0 6px;font:800 18px/1.2 "Bricolage Grotesque",sans-serif}
+.qa p{margin:0}
+.qa .base{font-weight:600}
+.qa-rol{margin-top:8px!important;padding:8px 10px;border-left:4px solid var(--rol);background:color-mix(in srgb,var(--rol) 8%,#fff);border-radius:0 8px 8px 0}
+.qa-rol .etq{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);margin-bottom:2px}
+.qa .marco{margin:10px 0 0}
+.qa.fiar{grid-column:1/-1;border:2px solid var(--tinta)}
+/* Regla del viaje */
+.regla{background:var(--tinta);color:#fff;border-radius:var(--radio);padding:24px 26px;margin-top:18px}
+.regla .kicker{color:#cfc8bb}
+.regla blockquote{margin:8px 0 6px;font:800 clamp(24px,3.4vw,36px)/1.15 "Bricolage Grotesque",sans-serif}
+.regla p{margin:0;color:#e6e0d6;font-size:17px;max-width:60ch}
+.verbos{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.verbos span{font-weight:700;border:2px solid #fff;border-radius:999px;padding:6px 14px}
+.verbos span+span::before{content:""}
+/* Anatomía (casilla 5) */
+/* De qué hablamos / de qué no: sitúa cada parada antes de entrar */
+.situa{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);padding:16px 22px;margin-top:14px;border-left:6px solid var(--rol)}
+.situa h4{font:700 12px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);margin:0 0 4px}
+.situa p{margin:0;font-size:16px;max-width:60ch}
+.situa .situa-no p{color:var(--suave)}
+.situa-nota{grid-column:1/-1;margin-top:8px!important;padding-top:10px;border-top:1px dashed var(--linea);font-size:15px!important;max-width:none!important}
+@media (max-width:720px){.situa{grid-template-columns:1fr;gap:12px}}
+.anatomia{background:var(--tarjeta);border-radius:var(--radio);box-shadow:var(--sombra);padding:22px;margin-top:18px}
+.anatomia-cab{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.anatomia-cab h2{font-size:clamp(22px,2.6vw,28px);font-weight:800}
+.lema{font:400 21px/1.3 "Gochi Hand",cursive;letter-spacing:.08em}
+.pasos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr) 0.9fr;gap:10px;counter-reset:paso}
+.paso{counter-increment:paso;position:relative;background:#fff;border:2px solid var(--linea);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.paso::before{content:counter(paso);font:800 26px/1 "Bricolage Grotesque",sans-serif;color:var(--suave)}
+.paso strong{font-size:15px;line-height:1.2}
+.paso p{margin:0;font-size:13px;color:var(--suave);line-height:1.4}
+.paso .quien{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:4px;padding:2px 6px;background:var(--linea);color:var(--tinta)}
+.paso.modelo{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.paso.modelo::before{color:#fff}
+.paso.modelo p{color:#d9d4cb}
+.paso.modelo .quien{background:var(--oro);color:var(--tinta)}
+.paso:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:50%;transform:translate(50%,-50%);font-weight:800;color:var(--suave);z-index:1}
+.paso.persona{border:2px dashed var(--rol);background:color-mix(in srgb,var(--rol) 8%,#fff);justify-content:center}
+.paso.persona::before{content:"✋"}
+.sellos{display:flex;flex-direction:column;gap:4px;margin-top:4px}
+.sellos span{font:700 12px Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;border:2px solid currentColor;border-radius:4px;padding:2px 6px;transform:rotate(-3deg);align-self:flex-start}
+.sellos span:nth-child(1){color:var(--ok)} .sellos span:nth-child(2){color:var(--ko)} .sellos span:nth-child(3){color:#8a5a00}
+.tu-angulo{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;margin-top:18px;padding:14px;border-radius:14px;background:color-mix(in srgb,var(--rol) 10%,#fff);border-left:5px solid var(--rol)}
+.tu-angulo img{height:64px;width:auto;justify-self:center}
+.tu-angulo p{margin:0;font-size:16px}
+.tu-angulo small{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--suave);margin-bottom:2px}
+.eco{margin:14px 0 0;color:var(--suave);font-style:italic}
+@media (max-width:900px){.pasos{grid-template-columns:1fr 1fr}.paso:not(:last-child)::after{display:none}}
+/* Meta */
+.meta-final{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.meta-final img{height:220px;width:auto}
+.meta-final h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;margin-bottom:10px}
+.meta-final .estrellas svg{width:40px;height:40px}
+.meta-final p{font-size:18px;max-width:52ch;margin:12px 0 0}
+.otros{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.otro{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:center;text-align:left;background:#fff;border:2px solid var(--linea);border-radius:14px;padding:10px 12px}
+.otro:hover{border-color:var(--c)}
+.otro img{height:56px;width:auto;justify-self:center}
+.otro strong{display:block}
+.otro small{color:var(--suave)}
+.otro em{display:block;font-style:normal;font-weight:600;font-size:13px;color:var(--c);margin-top:2px}
+/* Avisos de esqueleto */
+.provisional{display:inline-block;font-size:12px;font-weight:600;background:#fff1d6;color:#8a5a00;border-radius:999px;padding:3px 10px;margin-bottom:16px}
+.notas{border-left:4px solid #8a5a00;background:#fffaf0;border-radius:0 12px 12px 0;padding:12px 16px;margin-bottom:22px;font-size:14.5px}
+.notas strong{display:block;margin-bottom:4px}
+.notas ul{margin:4px 0 0;padding-left:18px}
+@media (max-width:720px){.meta-final{grid-template-columns:1fr;justify-items:center;text-align:center}.meta-final img{height:170px}.meta-final .estrellas{justify-content:center}}
+/* Explosión: humo y onomatopeya (fallos en el examen y viñetas en las que la lía) */
+.boom{position:absolute;width:132px;height:132px;transform:translate(-50%,-50%);pointer-events:none;z-index:6}
+.boom svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;animation:boom-pop .45s cubic-bezier(.2,1.6,.4,1) both}
+.boom .ono{position:absolute;inset:0;display:grid;place-items:center;font:800 25px/1 "Bricolage Grotesque",sans-serif;color:var(--tinta);transform:rotate(-9deg);letter-spacing:-.02em;animation:boom-pop .45s .05s cubic-bezier(.2,1.6,.4,1) both;text-shadow:2px 2px 0 #fff}
+.boom .humo{position:absolute;left:50%;top:55%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#c9c3ba,#8d867d);opacity:.0;animation:boom-humo 1.5s ease-out both}
+.boom .humo:nth-child(odd){width:26px;height:26px;margin:-13px 0 0 -13px}
+.boom.sale{opacity:0;transition:opacity .4s ease}
+/* Acierto: destello dorado, chispas y el personaje contento asomando */
+.bien{position:absolute;width:132px;height:132px;transform:translate(-50%,-50%);pointer-events:none;z-index:6}
+.bien svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;animation:boom-pop .45s cubic-bezier(.2,1.6,.4,1) both}
+.bien .ono{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font:800 21px/1 "Bricolage Grotesque",sans-serif;color:#1d5c38;transform:rotate(-7deg);letter-spacing:-.02em;animation:boom-pop-texto .45s .05s cubic-bezier(.2,1.6,.4,1) both;text-shadow:2px 2px 0 #fff}
+.bien .chispa{position:absolute;left:50%;top:50%;width:16px;height:16px;margin:-8px;background:var(--oro);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:bien-chispa 1.1s ease-out both}
+.bien .chispa:nth-child(odd){width:11px;height:11px;margin:-5.5px;background:#2f8f57}
+@keyframes bien-chispa{0%{transform:translate(0,0) scale(.2) rotate(0);opacity:1}70%{opacity:1}100%{transform:translate(var(--dx),var(--dy)) scale(1.15) rotate(170deg);opacity:0}}
+.bien .pj{position:absolute;right:86%;bottom:8px;height:96px;width:auto;max-width:none;animation:bien-salto .7s cubic-bezier(.3,1.5,.5,1) both;filter:drop-shadow(0 4px 3px rgba(30,34,48,.25))}
+@keyframes bien-salto{0%{transform:translateY(34px) scale(.6);opacity:0}55%{transform:translateY(-12px) scale(1.05);opacity:1}100%{transform:translateY(0) scale(1);opacity:1}}
+.bien.sale{opacity:0;transition:opacity .4s ease}
+.enlace-tramo{background:none;border:0;padding:0;font:inherit;font-weight:600;color:var(--tinta);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.boom.mini{width:96px;height:96px}
+.boom.mini .ono{font-size:19px}
+@keyframes boom-pop{0%{transform:scale(.15) rotate(-12deg);opacity:0}60%{transform:scale(1.12) rotate(3deg);opacity:1}100%{transform:scale(1) rotate(0);opacity:1}}
+.boom .ono{animation-name:boom-pop-texto}
+@keyframes boom-pop-texto{0%{transform:scale(.2) rotate(-25deg);opacity:0}60%{transform:scale(1.2) rotate(-6deg);opacity:1}100%{transform:scale(1) rotate(-9deg);opacity:1}}
+@keyframes boom-humo{0%{transform:translate(0,0) scale(.3);opacity:.85}100%{transform:translate(var(--dx),var(--dy)) scale(1.9);opacity:0}}
+.vineta.vineta-boom{background:repeating-conic-gradient(from 0deg at 50% 70%,#ffd0b8 0 7deg,#ffe6d6 7deg 14deg)}
+.boom.estatica svg,.boom.estatica .ono{animation:none}
+@keyframes temblor{20%{transform:translate(-4px,1px) rotate(-2deg)}40%{transform:translate(4px,-1px) rotate(2deg)}60%{transform:translate(-3px,0) rotate(-1deg)}80%{transform:translate(2px,0)}}
+.insignia.reacciona-boom .insignia-foto{animation:temblor .45s both}
+@media (prefers-reduced-motion:reduce){.boom .humo{opacity:.35}}
+footer{padding:30px 0 50px;color:var(--suave);font-size:14px}
+footer p{margin:0 0 6px;max-width:80ch}
+.sobre{margin:38px 0 8px;padding:22px 24px;background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--radio);max-width:860px}
+.sobre h2{font-size:22px;margin-bottom:10px}
+.sobre p{margin:0 0 10px;max-width:74ch}
+.sobre-enlaces{font-weight:600;margin-bottom:0!important}
+.otro-idioma{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--tinta);color:#fff;font-size:14.5px;font-weight:600;text-decoration:none}
+.otro-idioma:hover{text-decoration:underline}
+.error-carga{margin:40px auto;max-width:560px;padding:20px 24px;background:#fff;border:2px solid var(--ko);border-radius:var(--radio);font-size:17px}
+
+@media (max-width:720px){
+  .cabecera{padding-top:88px}
+  .cabecera>*{max-width:none}
+  .barra-casilla .envoltura{padding-right:220px;min-height:76px}
+  .migas{display:none}
+  .casilla{width:130px}
+  .casilla-cab{grid-template-columns:1fr;gap:12px}
+  .panel{padding:18px 16px 22px}
+  .tira{grid-template-columns:1fr}
+  .vineta{min-height:0}
+  .vineta-img img{max-height:140px}
+  .bocadillo{font-size:17px}
+  .insignia-texto small{display:none}
+  .fila{grid-template-columns:40px 1fr 54px;gap:10px}
+  .fila .estrellas{grid-column:2/-1;grid-row:2}
+  .estrellas svg{width:22px;height:22px}
+  .pestana{font-size:14px;padding:10px 6px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<noscript><p style="margin:0;padding:14px 16px;background:#1e2230;color:#fff;font:16px/1.5 system-ui,sans-serif">Este curso necesita JavaScript para funcionar. Actívalo en tu navegador y recarga la página. / This course needs JavaScript: please enable it and reload.</p></noscript>
+
+<div id="globo" role="tooltip" aria-hidden="true"></div>
+<div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+<div class="insignia" id="insignia">
+  <div class="idiomas" role="group" aria-label="Idioma / Language">
+    <button type="button" data-idioma="es" lang="es" aria-label="Español">ES</button>
+    <button type="button" data-idioma="en" lang="en" aria-label="English">EN</button>
+  </div>
+  <button class="insignia-boton" id="insignia-boton" aria-haspopup="true" aria-expanded="false" data-ui-aria="cambiarRol">
+    <span class="insignia-foto"><img id="insignia-img" alt=""></span>
+    <span class="insignia-texto"><small data-ui="tuRol"></small><strong id="insignia-nombre"></strong></span>
+  </button>
+  <div class="insignia-menu" id="insignia-menu" role="menu"></div>
+</div>
+
+<!-- ===== Vista: tablero (zoom out) ===== -->
+<div id="vista-tablero" class="vista">
+  <header class="envoltura cabecera">
+    <p class="kicker" data-ui="kickerPortada">Formación online · epifaneia.dev</p>
+    <h1 id="titulo">Viaje por la IA</h1>
+    <p id="subtitulo">Formación online en cinco paradas: cómo sacarle todo el partido a la IA y cómo hacerlo sin poner en riesgo los datos, desde tu rol.</p>
+    <p><a class="otro-idioma" id="otro-idioma" href="?lang=en" lang="en" hidden>Read this course in English →</a></p>
+  </header>
+  <main class="envoltura">
+    <div class="marco-tablero"><div class="tablero" id="tablero"></div></div>
+    <div class="titulo-seccion" id="marcador-sec"><h2 data-ui="tuProgreso"></h2><p data-ui="progresoDesc"></p></div>
+    <div class="marcador" id="marcador"></div>
+    <button class="reiniciar" id="reiniciar" data-ui="borrar"></button>
+    <section class="sobre" id="sobre" aria-labelledby="sobre-t">
+      <h2 id="sobre-t">Un curso gratuito de IA para el trabajo, por roles</h2>
+      <p><strong>Viaje por la IA</strong> es un curso online gratuito, sin registro y sin cookies, para aprender a usar la inteligencia artificial en el trabajo y a hacerlo sin poner en riesgo los datos de la empresa ni los de sus clientes. Está pensado para personas sin formación previa en IA.</p>
+      <p>Son <strong>cinco paradas</strong>, de menos a más: el chat de siempre (ChatGPT, Copilot, Gemini, Claude), la herramienta de IA para una tarea, la IA conectada a los datos de la empresa, los agentes que hacen el trabajo y la herramienta hecha a medida. En cada parada hay dos caminos: <em>sacarle partido</em> y <em>hacerlo seguro</em>, con el RGPD y el Reglamento europeo de IA explicados con casos de oficina.</p>
+      <p>Eliges uno de <strong>cinco roles</strong> y el curso cambia contigo: Empleado, Management, Data analysis, Marketing o IT. Management e IT tienen un tercer camino, <em>implantarlo</em>. Cada camino son unos 7 minutos: respuestas cortas, un ejemplo práctico en viñetas, tres ideas y un examen de cinco preguntas. Un viaje completo dura alrededor de una hora (cerca de dos horas en Management e IT) y termina con un diploma y un justificante imprimible.</p>
+      <p class="sobre-enlaces"><a href="empresas.html">Para empresas: cómo usarlo con tu plantilla</a> · <a href="#glosario">Glosario</a> · <a href="#cambios">Qué ha cambiado</a></p>
+    </section>
+  </main>
+  <footer><div class="envoltura">
+    <p id="pie-privacidad">Esta web no usa cookies ni analítica y no envía nada a nadie: tu progreso y tu nombre se quedan en tu navegador.</p>
+    <p><span class="revisado" id="revisado"></span></p>
+    <p id="pie-uso">Puedes usar este curso en tu empresa y enlazarlo sin pedir permiso. No puedes venderlo ni presentarlo como propio. Ilustraciones generadas con IA.</p>
+    <p>Daniel Martín · <a href="https://epifaneia.dev/" target="_blank" rel="noopener">epifaneia.dev</a> · <a href="https://github.com/epifaneia" target="_blank" rel="noopener">github.com/epifaneia</a> · <a id="pie-error" href="mailto:danielmartin@epifaneia.dev?subject=Viaje%20por%20la%20IA">¿Has visto un error o un dato desfasado? Escríbeme</a></p>
+  </div></footer>
+</div>
+
+<!-- ===== Vista: casilla (zoom in) ===== -->
+<div id="vista-casilla" class="vista" hidden>
+  <div class="barra-casilla">
+    <div class="envoltura">
+      <button class="volver" id="volver" data-ui-aria="volverMapa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+        <span data-ui="mapa"></span>
+      </button>
+      <nav class="migas" id="migas" data-ui-aria="paradas"></nav>
+    </div>
+  </div>
+  <main class="envoltura" id="casilla"></main>
+</div>
+
+<script>
+/* Textos de la interfaz en los dos idiomas. El contenido vive en contenido.js / contenido.en.js. */
+const UI = {
+  es: {
+    locale: "es-ES", cambiarRol: "Cambiar de rol", tuRol: "Tu rol", kickerPortada: "Formación online · epifaneia.dev",
+    tuProgreso: "Tu progreso", progresoDesc: "Una estrella por parada: media por sacarle partido, media por hacerlo seguro.",
+    borrar: "Borrar mi progreso", volverMapa: "Volver al mapa del viaje", mapa: "Mapa", paradas: "Paradas",
+    tramoUso: "Sacarle partido", tramoSeguro: "Hacerlo seguro", tramoImplantar: "Implantarlo", antesImplantar: "Antes de implantarlo",
+    onomatopeyas: ["¡BUM!", "¡CATAPUM!", "¡PUF!", "¡CRAC!", "¡PATAPLAF!"],
+    aciertos: ["¡BIEN!", "¡ESO ES!", "¡EXACTO!", "¡CLAVADA!", "¡TOMA!"], sigueCon: "Sigue con", faltaTramo: n => `Te falta el examen de ${n}.`,
+    parada: i => `Parada ${i}`, bloqueadaAria: " (bloqueada)", bloqueadaTitle: " · bloqueada",
+    empiezaAqui: "Empieza aquí", finViaje: "Fin del viaje", pasaSalida: "Pasa por el punto de partida", completa: n => `Completa la parada ${n}`,
+    mediasTitle: "⚡ partido · 🛡 seguro", kickerFinal: "Final del viaje", antesSalir: "Antes de salir", situaEs: "De qué hablamos", situaNo: "De qué no", paradaDe: (i, n) => `Parada ${i} de ${n}`,
+    queVamos: "Qué vamos a hacer", comoFunciona: "Cómo funciona", eligeRol: "Elige rol",
+    mismoPersonaje: "Siempre es el mismo personaje. Lo que cambia es el rol: a quién hablamos, qué le importa y cómo se lo contamos.",
+    mediaEstrella: "Media estrella", modelo: "▲ modelo", codigo: "■ código", unaPersona: "Una persona",
+    sellos: ["Aceptar", "Rechazar", "Consultar"], desdeTuRol: "Desde tu rol",
+    viajeCompleto: "Viaje completo", vaPor: n => `Va por la parada ${n}`, sinEmpezar: "Sin empezar", hacerViaje: "Hacer el viaje con este rol →",
+    estrellasDe: (x, n) => `${x} de ${n} estrellas`, otrosRoles: "Otros roles", paraAmpliar: "Para ampliar",
+    contactos: { dpo: "Delegado de protección de datos (DPO)", it: "IT", incidencias: "Canal de incidencias" },
+    enOrg: x => `En ${x}`, tuOrg: "tu organización", herrAprob: "Herramientas aprobadas:", nuncaSale: "Esto no sale nunca hacia una herramienta de IA:",
+    politica: "Política de uso de IA", aQuien: "A quién acudir:", obligatorias: "Paradas obligatorias según rol:", paradasLista: ns => `paradas ${ns}`,
+    herramientaAprobada: h => `Herramienta aprobada: ${h}.`, avisaA: "Avisa a:",
+    superado: "Superado", pendiente: "Pendiente", justTitulo: "Justificante de formación",
+    avisoTitulo: "Antes de cargar tú con el diseño", teLlevas: "Lo que te llevas", diploma: "Diploma", seConcede: "Se concede a", nombreDip: "Tu nombre para el diploma (se queda en tu navegador)",
+    dipTexto: (roles, n) => `por completar ${n === 1 ? "el viaje" : `${n} viajes`} de <strong>${roles}</strong>: cinco paradas, del chat a la herramienta hecha a medida, sacándole partido y haciéndolo seguro.`,
+    dipAviso: "Diploma informativo: lo genera esta web con el progreso guardado en tu navegador. No acredita una formación oficial ni sustituye a la que pida tu empresa.",
+    imprimirDiploma: "Imprimir diploma", otraVezConfeti: "🎉 Más confeti", selloImg: "img/sello.webp", dipVersion: v => `Versión ${v}`, selloTexto: "VIAJE POR LA IA",
+    justAviso: "Registro de la formación realizada, no un certificado de cumplimiento.", tuNombre: "Tu nombre (no se guarda en ningún sitio)",
+    nombre: "Nombre:", formacion: "Formación:", rol: "Rol:", thParada: "Parada",
+    versionRev: (v, r) => `Versión del contenido: ${v} · revisado a ${r}`, imprimir: "Imprimir o guardar en PDF",
+    volverMapaBtn: "Volver al mapa →", primera: "Primera parada", destino: "Destino", proxima: "Próxima parada",
+    supera: "Supera todos los exámenes de esta parada para abrir la próxima.",
+    imgProv: "Imágenes provisionales", quien: "Quién", queImporta: "Qué le importa", comoContamos: "Cómo lo contamos",
+    rolActual: "✓ Tu rol actual", elegir: "Elegir este rol →",
+    pendienteEscribir: n => `Pendiente de escribir para ${n}`, temasPrevistos: "Temas previstos:", ejIdeasExamen: "Ejemplo práctico, ideas fuerza y examen.",
+    elAuditor: "El auditor", elIntruso: "El intruso",
+    retomamos: n => `↪ Lo retomamos en la parada ${n}`, vieneDe: n => `↩ Viene de la parada ${n}`,
+    avisoEmpTitulo: "Todos somos empleados", avisoEmpTexto: n => `Lo básico de trabajar con IA está en el viaje de ${n}, y vale para cualquier rol. Quizá quieras hacerlo también. Tu progreso con este rol se guarda.`,
+    avisoEmpIr: n => `Ir al viaje de ${n}`, avisoEmpNo: "Ahora no", avisoEmpAria: "Tienes un aviso", notasRevision: "Notas para escribir (solo en modo revisión)", paraRol: n => `Para ${n}`, textoProvisional: "Texto provisional · lorem ipsum",
+    antesUsarlo: "Antes de usarlo", antesMeter: "Antes de meter nada", ejemplo: "Ejemplo práctico", ideas: "Ideas fuerza", examen: "Examen",
+    nPreguntas: n => `${n} preguntas`, conseguida: "conseguida", paseTitulo: n => `Viaje de ${n}`, paseTexto: n => `Esto se ve a fondo en el viaje de ${n}.`, unaCorrecta: "Una sola respuesta correcta por pregunta.",
+    hayQueAcertar: n => `Para ganar media estrella hay que acertar las ${n}.`, conAciertos: n => `Con ${n} aciertos ganas media estrella.`,
+    cadaIntento: "Cada intento cambia el orden y algunas preguntas.", repetir: "Repetir", empezar: "Empezar",
+    mediaConseguida: "Media estrella conseguida.", noSuperado: "Examen no superado.", tienesQueRepetir: "Tienes que repetir este examen.", yaConseguida: "Este intento no llega, pero tu media estrella ya estaba conseguida y la conservas.", faltaImplantar: "Te falta el examen de 🧭 Implantarlo para completar esta media estrella.",
+    paraSuperarlo: (a, n) => `Para superarlo hay que acertar ${a} de ${n}. Las preguntas salen en otro orden y algunas son nuevas.`, otraVez: "Otra vez", repetirExamen: "Repetir el examen",
+    preguntaDe: (i, n) => `Pregunta ${i} de ${n}`, correctaSr: " (correcta)", tuRespuestaSr: " (tu respuesta, incorrecta)",
+    bien: "¡Bien!", no: "No.", siguiente: "Siguiente", verResultado: "Ver resultado",
+    anuncioResultado: (a, n) => `Resultado: ${a} de ${n}.`, anuncioRepetir: (a, n) => `Tienes que repetir este examen: hay que acertar ${a} de ${n}.`,
+    anuncioCorrecta: "Correcta.", anuncioIncorrecta: l => `Incorrecta. La correcta era la ${l}.`,
+    tituloPagina: "Viaje por la IA · Curso gratuito de IA en el trabajo, por roles",
+    descPagina: "Curso online gratuito y sin registro: cómo usar la IA en tu trabajo y cómo hacerlo sin poner en riesgo los datos. Cinco paradas, cinco roles, una hora.",
+    minutos: n => `≈ ${n} min`, hora: "h", nCaminos: n => `${n} caminos`, masSobreRol: "Más sobre este rol", saberMas: "Para saber más",
+    alDia: f => `Al día (${f}):`, otroCaso: "Otro caso", glosario: "Glosario", glosarioQue: "Las palabras del curso, explicadas en llano.",
+    cambios: "Qué ha cambiado", cambiosQue: "Registro de cambios del contenido.", versionN: v => `Versión ${v}`,
+    nadieVeNota: "Este examen es para ti: nadie ve tu nota.", tiempoEstimado: "Tiempo estimado:", paraEmpresas: "Para empresas: cómo usarlo con tu plantilla →",
+    srEstado: { contento: "contento", pensativo: "pensando", triste: "serio", boom: "la ha liado" }, srTu: "Tú", empezarPor: "Empezar por",
+    confirmarBorrar: "¿Borrar el progreso de todos los roles?", revisado: (r, v) => `Contenido revisado a ${r} · versión ${v}`
+  },
+  en: {
+    locale: "en-GB", cambiarRol: "Change role", tuRol: "Your role", kickerPortada: "Online training · epifaneia.dev",
+    tuProgreso: "Your progress", progresoDesc: "One star per stop: half for getting the most out of it, half for doing it safely.",
+    borrar: "Delete my progress", volverMapa: "Back to the journey map", mapa: "Map", paradas: "Stops",
+    tramoUso: "Get the most out of it", tramoSeguro: "Do it safely", tramoImplantar: "Roll it out", antesImplantar: "Before you roll it out",
+    onomatopeyas: ["BOOM!", "KABOOM!", "POOF!", "CRASH!", "KERPOW!"],
+    aciertos: ["YES!", "SPOT ON!", "EXACTLY!", "NAILED IT!", "NICE!"], sigueCon: "Continue with", faltaTramo: n => `You still need to pass the “${n}” quiz.`,
+    parada: i => `Stop ${i}`, bloqueadaAria: " (locked)", bloqueadaTitle: " · locked",
+    empiezaAqui: "Start here", finViaje: "End of the journey", pasaSalida: "Visit the starting point first", completa: n => `Complete stop ${n}`,
+    mediasTitle: "⚡ Get the most out of it · 🛡 Do it safely", kickerFinal: "End of the journey", antesSalir: "Before you set off", situaEs: "What this stop is about", situaNo: "What it isn't", paradaDe: (i, n) => `Stop ${i} of ${n}`,
+    queVamos: "What we'll do", comoFunciona: "How it works", eligeRol: "Choose a role",
+    mismoPersonaje: "It's always the same character. What changes is the role: who we're talking to, what matters to them and how we explain it.",
+    mediaEstrella: "Half star", modelo: "▲ model", codigo: "■ code", unaPersona: "A person",
+    sellos: ["Accept", "Reject", "Refer"], desdeTuRol: "From your role",
+    viajeCompleto: "Journey complete", vaPor: n => `At stop ${n}`, sinEmpezar: "Not started", hacerViaje: "Take the journey with this role →",
+    estrellasDe: (x, n) => `${x} of ${n} stars`, otrosRoles: "Other roles", paraAmpliar: "Further reading",
+    contactos: { dpo: "Data protection officer (DPO)", it: "IT", incidencias: "Incident channel" },
+    enOrg: x => `At ${x}`, tuOrg: "your organisation", herrAprob: "Approved tools:", nuncaSale: "This never goes into an AI tool:",
+    politica: "AI usage policy", aQuien: "Who to contact:", obligatorias: "Required stops by role:", paradasLista: ns => `stops ${ns}`,
+    herramientaAprobada: h => `Approved tool: ${h}.`, avisaA: "Tell:",
+    superado: "Passed", pendiente: "Pending", justTitulo: "Training record",
+    avisoTitulo: "Before you take on the design", teLlevas: "What you take away", diploma: "Certificate of completion", seConcede: "Awarded to", nombreDip: "Your name for the certificate (it stays in your browser)",
+    dipTexto: (roles, n) => `for completing the <strong>${roles}</strong> journey${n === 1 ? "" : "s"}: five stops, from the chatbot to the custom-built tool, getting the most out of AI and doing it safely.`,
+    dipAviso: "This certificate is for information only: this website generates it from the progress saved in your browser. It isn't an official qualification and doesn't replace any training your company requires.",
+    imprimirDiploma: "Print certificate", otraVezConfeti: "🎉 More confetti", selloImg: "img/sello-en.webp", dipVersion: v => `Version ${v}`, selloTexto: "A JOURNEY THROUGH AI",
+    justAviso: "A record of the training completed, not a certificate of compliance.", tuNombre: "Your name (not stored anywhere)",
+    nombre: "Name:", formacion: "Training:", rol: "Role:", thParada: "Stop",
+    versionRev: (v, r) => `Content version: ${v} · reviewed on ${r}`, imprimir: "Print or save as PDF",
+    volverMapaBtn: "Back to the map →", primera: "First stop", destino: "Destination", proxima: "Next stop",
+    supera: "Pass all the quizzes at this stop to unlock the next one.",
+    imgProv: "Provisional images", quien: "Who", queImporta: "What matters to them", comoContamos: "How we explain it",
+    rolActual: "✓ Your current role", elegir: "Choose this role →",
+    pendienteEscribir: n => `Still to be written for ${n}`, temasPrevistos: "Planned topics:", ejIdeasExamen: "Worked example, key ideas and quiz.",
+    elAuditor: "The auditor", elIntruso: "The intruder",
+    retomamos: n => `↪ We pick this up again at stop ${n}`, vieneDe: n => `↩ Picked up from stop ${n}`,
+    avisoEmpTitulo: "We're all employees", avisoEmpTexto: n => `The basics of working with AI are in the ${n} journey, and they apply to every role. You may want to take it too. Your progress in this role is saved.`,
+    avisoEmpIr: n => `Go to the ${n} journey`, avisoEmpNo: "Not now", avisoEmpAria: "You have a notice", notasRevision: "Writing notes (review mode only)", paraRol: n => `For ${n}`, textoProvisional: "Placeholder text · lorem ipsum",
+    antesUsarlo: "Before you use it", antesMeter: "Before you put anything in", ejemplo: "Worked example", ideas: "Key ideas", examen: "Quiz",
+    nPreguntas: n => `${n} questions`, conseguida: "earned", paseTitulo: n => `${n} journey`, paseTexto: n => `This is covered in depth in the ${n} journey.`, unaCorrecta: "One correct answer per question.",
+    hayQueAcertar: n => `To earn the half star you need all ${n} right.`, conAciertos: n => `Get ${n} right to earn the half star.`,
+    cadaIntento: "Each attempt changes the order and some of the questions.", repetir: "Retake", empezar: "Start",
+    mediaConseguida: "Half star earned.", noSuperado: "Quiz not passed.", tienesQueRepetir: "You need to retake this quiz.", yaConseguida: "This attempt falls short, but you'd already earned this half star and you keep it.", faltaImplantar: "You still need to pass the 🧭 Roll it out quiz to complete this half star.",
+    paraSuperarlo: (a, n) => `To pass, you need ${a} out of ${n} right. The questions come in a different order, and some are new.`, otraVez: "Again", repetirExamen: "Retake the quiz",
+    preguntaDe: (i, n) => `Question ${i} of ${n}`, correctaSr: " (correct)", tuRespuestaSr: " (your answer, incorrect)",
+    bien: "Right!", no: "Not quite.", siguiente: "Next", verResultado: "See result",
+    anuncioResultado: (a, n) => `Result: ${a} out of ${n}.`, anuncioRepetir: (a, n) => `You need to retake this quiz: you need ${a} out of ${n} right.`,
+    anuncioCorrecta: "Correct.", anuncioIncorrecta: l => `Incorrect. The right answer was ${l}.`,
+    tituloPagina: "A Journey Through AI · Free course on AI at work, by role",
+    descPagina: "A free online course, no sign-up: how to use AI in your job and how to do it without putting data at risk. Five stops, five roles, about an hour.",
+    minutos: n => `≈ ${n} min`, hora: "h", nCaminos: n => `${n} paths`, masSobreRol: "More about this role", saberMas: "More detail",
+    alDia: f => `Up to date (${f}):`, otroCaso: "Another case", glosario: "Glossary", glosarioQue: "The course's vocabulary, in plain words.",
+    cambios: "What's changed", cambiosQue: "Change log for the content.", versionN: v => `Version ${v}`,
+    nadieVeNota: "This quiz is for you: nobody sees your score.", tiempoEstimado: "Estimated time:", paraEmpresas: "For companies: how to use it with your staff →",
+    srEstado: { contento: "pleased", pensativo: "thinking", triste: "serious", boom: "it has gone wrong" }, srTu: "You", empezarPor: "Start with",
+    sobreHtml: `<h2 id="sobre-t">A free course on AI at work, by role</h2>
+      <p><strong>A Journey Through AI</strong> is a free online course, with no sign-up and no cookies, on how to use artificial intelligence at work without putting your company's data, or your customers', at risk. It is written for people with no prior AI training and is set in a Spanish company, within the European legal framework.</p>
+      <p>There are <strong>five stops</strong>, from simplest to most involved: the everyday chatbot (ChatGPT, Copilot, Gemini, Claude), the single-task AI tool, AI connected to company data, agents that do the work, and the custom-built tool. Each stop has two paths, <em>get the most out of it</em> and <em>do it safely</em>, with the GDPR and the EU AI Act explained through office situations.</p>
+      <p>You pick one of <strong>five roles</strong> and the course changes with you: Employee, Management, Data analysis, Marketing or IT. Management and IT have a third path, <em>roll it out</em>. Each path takes about 7 minutes: short answers, a worked example as a comic strip, three key ideas and a five-question quiz. A full journey takes around an hour (nearly two hours for Management and IT) and ends with a certificate of completion and a printable training record.</p>
+      <p class="sobre-enlaces"><a href="for-companies.html">For companies: how to use it with your staff</a> · <a href="#glosario">Glossary</a> · <a href="#cambios">What's changed</a></p>`,
+    piePrivacidad: "This site uses no cookies or analytics and sends nothing to anyone: your progress and your name stay in your browser.",
+    pieUso: "You may use this course in your company and link to it without asking. You may not sell it or present it as your own. Illustrations generated with AI.",
+    pieError: "Spotted a mistake or something out of date? Email me",
+    confirmarBorrar: "Delete the progress for every role?", revisado: (r, v) => `Content reviewed on ${r} · version ${v}`
+  }
+};
+</script>
+<script>
+// Idioma: ?lang=es|en > elección guardada > español. A quien llega con el navegador en otro idioma
+// se le ofrece el inglés con una línea arriba, pero la página no cambia sola (y un buscador ve el español).
+window.IDIOMA = (() => {
+  const CLAVE_IDIOMA = "viaje-ia-idioma";
+  const q = new URLSearchParams(location.search).get("lang");
+  let l = q === "es" || q === "en" ? q : null;
+  try { if (l) localStorage.setItem(CLAVE_IDIOMA, l); else l = localStorage.getItem(CLAVE_IDIOMA); } catch (e) {}
+  if (l !== "es" && l !== "en") { l = "es"; window.SUGERIR_INGLES = !/^(es|ca|gl|eu)\b/i.test(navigator.language || "es"); }
+  document.documentElement.lang = l;
+  return l;
+})();
+</script>
+<script>
+window.arrancarViaje = () => {
+  const T = window.TUTORIAL;
+  const IDIOMA = window.IDIOMA;
+  const L = UI[IDIOMA];
+  const num = x => x.toLocaleString(L.locale);
+  const CLAVE = "sombrero-ia-v1";
+  const PREGUNTAS_POR_EXAMEN = 5;
+  const TRAMOS = [
+    { id: "uso", nombre: L.tramoUso, icono: "⚡" },
+    { id: "seguro", nombre: L.tramoSeguro, icono: "🛡" },
+    // Solo para los roles que lo tienen (soloRoles): su examen cuenta para la media estrella de seguridad.
+    { id: "implantar", nombre: L.tramoImplantar, icono: "🧭" }
+  ];
+  const reducido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Iconos de casilla (trazo simple) */
+  const ICONOS = {
+    salida: '<path d="M6 21V4"/><path d="M6 4h11l-2.5 4L17 12H6"/>',
+    chat: '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/>',
+    especifica: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6"/>',
+    ecosistema: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
+    agentes: '<circle cx="12" cy="6" r="2.6"/><circle cx="5" cy="18" r="2.2"/><circle cx="12" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 8.6v7.2M10.4 8l-4.3 8M13.6 8l4.3 8"/>',
+    api: '<path d="M9 3v5M15 3v5"/><path d="M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v4"/>',
+    custom: '<path d="M4 4h6l2 2v6H4z"/><path d="M14 12h6v8h-8v-4"/><path d="M8 15c0 2 1.5 3 4 3"/><path d="M10.5 16.5 12 18l-1.5 1.5"/>',
+    meta: '<path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/>'
+  };
+  const icono = id => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONOS[id] || ""}</svg>`;
+
+  /* Casillas: 0 = salida, 1..n = módulos */
+  const CASILLAS = [
+    { id: "salida", titulo: T.intro.titulo, que: T.intro.que, intro: true },
+    ...T.modulos.map(m => ({ id: m.id, titulo: m.titulo, que: m.que, modulo: m })),
+    { id: "meta", titulo: T.meta.titulo, que: T.meta.que, meta: true }
+  ];
+  const ULTIMA = CASILLAS.length - 1;     // la meta
+  const NIVELES = T.modulos.length;
+
+  /* ---------- Estado ---------- */
+  let guardado = { rol: T.roles[0].id, ok: {}, pos: {}, salida: {} };
+  try {
+    const g = JSON.parse(localStorage.getItem(CLAVE) || "null");
+    if (g && g.ok) guardado = Object.assign(guardado, g);
+    if (typeof guardado.pos !== "object") guardado.pos = {};
+    guardado.salida = guardado.salida || {};
+    const ids = new Set(T.modulos.map(m => m.id));
+    for (const k of Object.keys(guardado.ok)) if (!ids.has(k.split("|")[1])) { delete guardado.ok[k]; if (guardado.fechas) delete guardado.fechas[k]; }
+  } catch (e) {}
+  const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(guardado)); } catch (e) {} };
+
+  // MODO EDICIÓN: false en la versión publicada. Con true se activan dos atajos
+  // para trabajar el contenido:
+  //   ?revision       → todas las paradas abiertas y notas de redacción visibles
+  //   ?todo-aprobado  → guarda en este navegador todas las paradas aprobadas
+  const MODO_EDICION = false;
+  const params = new URLSearchParams(location.search);
+  if (MODO_EDICION && params.has("todo-aprobado")) {
+    T.roles.forEach(r => {
+      guardado.salida[r.id] = true;
+      T.modulos.forEach(m => ["uso", "seguro"].forEach(t => { guardado.ok[`${r.id}|${m.id}|${t}`] = true; }));
+    });
+    guardar();
+    history.replaceState(null, "", location.pathname + location.hash);
+  }
+
+  const pestanaActiva = {};
+  const examenes = {};
+  const rol = () => T.roles.find(r => r.id === guardado.rol) || T.roles[0];
+  const img = (quien, estado) => `img/${quien}-${estado}.webp`;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const clave = (r, m, t) => `${r}|${m}|${t}`;
+  const barajar = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const hecho = (r, m, t) => !!guardado.ok[clave(r, m, t)];
+  const modDe = id => T.modulos.find(x => x.id === id);
+  // ¿Tiene este rol el camino t en este módulo? (con contenido y examen escritos)
+  function tieneTramo(r, m, t) {
+    const tr = m && m.tramos[t];
+    if (!tr) return false;
+    if (tr.soloRoles && !tr.soloRoles.includes(r)) return false;
+    return t !== "implantar" || ((tr.porRol[r] || {}).preguntas || []).length >= PREGUNTAS_POR_EXAMEN;
+  }
+  const tramosDe = (r, m) => TRAMOS.filter(t => tieneTramo(r, m, t.id));
+  // Tiempo de lectura de un camino: lo que ve ese rol, a 200 palabras por minuto, más el examen.
+  const palabras = v => (typeof v === "string" ? v : (v && v.t) || "").replace(/\{\{\w+\|([^|}]+)(?:\|[^}]+)?\}\}/g, "$1").split(/\s+/).filter(Boolean).length;
+  function minutosDe(rid, m, tid) {
+    const tr = m.tramos[tid], c = tr && (tr.porRol || {})[rid];
+    if (!c) return 0;
+    const llano = !!(T.roles.find(x => x.id === rid) || {}).llano;
+    const suma = (o, f = palabras) => Object.values(o || {}).reduce((a, v) => a + f(v), 0);
+    const comun = suma(tr.comun, v => llano && v && v.llano ? palabras(v.llano) : palabras(v));
+    const vin = (c.ejemplo || tr.ejemplo || []).concat((c.ejemploExtra || {}).vinetas || []).reduce((a, v) => a + palabras(v.texto) + palabras(v.pie), 0);
+    const ps = c.preguntas || [];
+    const ex = ps.length ? ps.reduce((a, q) => a + palabras(q.q) + q.o.reduce((b, o) => b + palabras(o), 0) + palabras(q.e), 0) / ps.length * PREGUNTAS_POR_EXAMEN : 0;
+    return Math.max(3, Math.round((comun + suma(c.respuestas) + vin + (c.ideas || []).reduce((a, x) => a + palabras(x), 0) + ex) / 200 + 1.5));
+  }
+  const minutosRol = rid => T.modulos.reduce((a, m) => a + TRAMOS.reduce((b, t) => b + (tieneTramo(rid, m, t.id) ? minutosDe(rid, m, t.id) : 0), 0), 0);
+  const caminosRol = rid => T.modulos.reduce((a, m) => a + TRAMOS.filter(t => tieneTramo(rid, m, t.id)).length, 0);
+  const duracion = min => { const r = Math.round(min / 5) * 5, h = Math.floor(r / 60), mm = r % 60; return h ? `≈ ${h} ${L.hora}${mm ? " " + String(mm).padStart(2, "0") : ""}` : L.minutos(r); };
+  // Ancho de cada imagen de personaje (todas miden 600 de alto): evita saltos mientras cargan.
+  const ANCHOS = { "auditor-boom": 365, "auditor-contento": 520, "auditor-pensativo": 474, "auditor-triste": 403, "data-boom": 379, "data-contento": 600, "data-pensativo": 349, "data-triste": 369, "empleado-boom": 390, "empleado-contento": 534, "empleado-pensativo": 375, "empleado-triste": 406, "it-boom": 470, "it-contento": 516, "it-pensativo": 454, "it-triste": 364, "management-boom": 512, "management-contento": 655, "management-pensativo": 499, "management-triste": 444, "marketing-boom": 544, "marketing-contento": 640, "marketing-pensativo": 533, "marketing-triste": 529 };
+  const wh = (quien, estado) => ANCHOS[quien + "-" + estado] ? ` width="${ANCHOS[quien + "-" + estado]}" height="600"` : "";
+  // Icono de cada pestaña: en los roles con Implantarlo, Seguro e Implantarlo forman juntos la media estrella.
+  function estadoPestana(r, m, t) {
+    if (!hecho(r, m.id, t)) return false;
+    if ((t === "seguro" || t === "implantar") && tieneTramo(r, m, "implantar")) return ganada(r, m.id, "seguro") ? true : "parcial";
+    return true;
+  }
+  const ganada = (r, m, t) => t === "seguro" && tieneTramo(r, modDe(m), "implantar")
+    ? hecho(r, m, "seguro") && hecho(r, m, "implantar") : hecho(r, m, t);
+  const REVISION = MODO_EDICION && params.has("revision");
+  const posDe = (r = guardado.rol) => guardado.pos[r] || 0;
+  // Casilla 0 siempre abierta; la 1 tras pasar por la salida; la N+1 con las dos medias de la N.
+  function abierta(i, r = guardado.rol) {
+    // El punto de partida es solo una introducción: de ahí a la parada 1 se pasa sin más.
+    if (REVISION || i <= 1) return true;
+    const m = CASILLAS[i - 1].modulo;
+    return abierta(i - 1, r) && ganada(r, m.id, "uso") && ganada(r, m.id, "seguro");
+  }
+  const ICONO_CANDADO = '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+
+  /* ---------- Glosario ---------- */
+  const GLOS = (T.glosario || []).slice().sort((x, y) => y.t.length - x.t.length);
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&");
+  const reGlos = GLOS.length ? new RegExp("(?<![\\p{L}\\d/])(" + GLOS.map(g => escRe(esc(g.t))).join("|") + ")(?![\\p{L}\\d])", "giu") : null;
+  // Texto escapado → texto con la primera aparición de cada término marcada. Con un glosario amplio, marcar
+  // cada frase llenaría la página de subrayados: cada término se marca una vez por bloque (nuevoBloque()).
+  let vistosBloque = new Set();
+  const nuevoBloque = () => { vistosBloque = new Set(); return ""; };
+  function tx(texto) {
+    // Los pases se apartan antes del glosario (su nota va en un atributo) y se devuelven al final.
+    const pases = [];
+    const html = esc(texto).replace(/\{\{(\w+)\|([^|}]+)(?:\|([^}]+))?\}\}/g, (m, id, visible, nota) => {
+      const r = T.roles.find(x => x.id === id);
+      if (!r) return visible;
+      pases.push(`<span class="termino pase" tabindex="0" data-t="${esc(L.paseTitulo(r.nombre))}" data-d="${nota || esc(L.paseTexto(r.nombre))}">${visible}</span>`);
+      return `\u0001${pases.length - 1}\u0002`;
+    });
+    const devolver = h => h.replace(/\u0001(\d+)\u0002/g, (m, n) => pases[+n]);
+    if (!reGlos) return devolver(html);
+    const usados = vistosBloque;
+    return devolver(html.replace(reGlos, m => {
+      const g = GLOS.find(x => (x.exacto ? esc(x.t) === m : esc(x.t).toLowerCase() === m.toLowerCase()));
+      if (!g || usados.has(g.t)) return m;
+      usados.add(g.t);
+      return `<span class="termino" tabindex="0" data-t="${esc(g.t)}" data-d="${esc(g.d)}">${m}</span>`;
+    }));
+  }
+  const globo = document.getElementById("globo");
+  function mostrarGlobo(el) {
+    globo.innerHTML = `<strong>${el.dataset.t}</strong>${el.dataset.d}`;
+    globo.classList.add("visible");
+    const r = el.getBoundingClientRect();
+    const g = globo.getBoundingClientRect();
+    let x = Math.min(Math.max(8, r.left), innerWidth - g.width - 8);
+    let y = r.bottom + 8;
+    if (y + g.height > innerHeight - 8) y = r.top - g.height - 8;
+    globo.style.left = x + "px";
+    globo.style.top = y + "px";
+  }
+  const ocultarGlobo = () => globo.classList.remove("visible");
+  document.addEventListener("mouseover", e => { const t = e.target.closest(".termino"); if (t) mostrarGlobo(t); });
+  document.addEventListener("mouseout", e => { if (e.target.closest(".termino")) ocultarGlobo(); });
+  document.addEventListener("focusin", e => { const t = e.target.closest(".termino"); if (t) mostrarGlobo(t); });
+  document.addEventListener("focusout", e => { if (e.target.closest(".termino")) ocultarGlobo(); });
+  addEventListener("scroll", ocultarGlobo, { passive: true });
+  // Al tocar o hacer clic también se abre (en un móvil no hay «pasar el ratón»); fuera, se cierra.
+  document.addEventListener("click", e => { const t = e.target.closest(".termino"); if (t) mostrarGlobo(t); else ocultarGlobo(); });
+
+  /* ---------- Explosión (humo + onomatopeya) ---------- */
+  const ONOMATOPEYAS = L.onomatopeyas;
+  function estallido() {
+    // Estrella de cómic: puntas alternas, dos capas.
+    const capa = (rExt, rInt, color) => {
+      const puntos = [];
+      for (let k = 0; k < 24; k++) {
+        const ang = (Math.PI * 2 * k) / 24 - Math.PI / 2;
+        const r = (k % 2 ? rInt : rExt) * (0.9 + Math.random() * 0.2);
+        puntos.push((50 + r * Math.cos(ang)).toFixed(1) + "," + (50 + r * Math.sin(ang)).toFixed(1));
+      }
+      return `<polygon points="${puntos.join(" ")}" fill="${color}" stroke="#1e2230" stroke-width="2.5" stroke-linejoin="round"/>`;
+    };
+    return `<svg viewBox="0 0 100 100" aria-hidden="true">${capa(50, 33, "#ff8a3d")}${capa(38, 25, "#ffd23f")}</svg>`;
+  }
+  // Pone una explosión en (x, y) dentro de «contenedor» (que debe ser position:relative).
+  // fija = se queda (viñetas); si no, se desvanece sola (examen).
+  function explotar(contenedor, x, y, { fija = false, mini = false } = {}) {
+    const b = document.createElement("div");
+    b.className = "boom" + (mini ? " mini" : "");
+    b.setAttribute("aria-hidden", "true");
+    b.style.left = x + "px";
+    b.style.top = y + "px";
+    const humo = Array.from({ length: 7 }, (_, k) => {
+      const ang = (Math.PI * 2 * k) / 7 + Math.random() * 0.5;
+      const d = 34 + Math.random() * 26;
+      return `<span class="humo" style="--dx:${(Math.cos(ang) * d).toFixed(0)}px;--dy:${(Math.sin(ang) * d - 10).toFixed(0)}px;animation-delay:${(k * 0.04).toFixed(2)}s"></span>`;
+    }).join("");
+    b.innerHTML = humo + estallido() + `<span class="ono">${ONOMATOPEYAS[Math.floor(Math.random() * ONOMATOPEYAS.length)]}</span>`;
+    contenedor.appendChild(b);
+    if (!fija) {
+      setTimeout(() => b.classList.add("sale"), 1100);
+      setTimeout(() => b.remove(), 1600);
+    }
+    return b;
+  }
+  // Media estrella dibujada: mitad izquierda (uso) o derecha (seguro); en dorado si está conseguida.
+  let idMedia = 0;
+  // ganadaYa: true · false · "parcial" (su examen está aprobado, pero la media estrella necesita también Implantarlo).
+  function media(tramoId, ganadaYa, pega = false) {
+    const parcial = ganadaYa === "parcial";
+    const id = "m" + (idMedia++);
+    const d = "M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z";
+    const x = tramoId === "uso" ? 0 : 12;
+    return `<span class="media ${ganadaYa === true ? "ganada" : ""} ${parcial ? "parcial" : ""} ${pega ? "pega" : ""}" role="img" aria-label="${esc(L.mediaEstrella)}${ganadaYa === true ? " · " + esc(L.conseguida) : parcial ? " · " + esc(L.faltaImplantar) : ""}" title="${parcial ? esc(L.faltaImplantar) : esc(L.mediaEstrella)}"><svg viewBox="0 0 24 24" aria-hidden="true">
+      <defs><clipPath id="${id}"><rect x="${x}" y="0" width="12" height="24"/></clipPath>${parcial ? `<pattern id="${id}p" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="3" fill="var(--gris-estrella)"/><rect width="1.5" height="3" fill="var(--oro)"/></pattern>` : ""}</defs>
+      <path d="${d}" fill="none" stroke="var(--gris-estrella)" stroke-width="1.2" stroke-dasharray="2 1.6"/>
+      <path d="${d}" clip-path="url(#${id})" fill="${ganadaYa === true ? "var(--oro)" : parcial ? "url(#" + id + "p)" : "var(--gris-estrella)"}" stroke="${ganadaYa ? "#1e2230" : "none"}" stroke-width="1.1" stroke-linejoin="round"/>
+    </svg></span>`;
+  }
+  // Acierto: destello dorado con chispas y el personaje contento, en (x, y) dentro de «contenedor».
+  function celebrar(contenedor, x, y, texto) {
+    const b = document.createElement("div");
+    b.className = "bien";
+    b.setAttribute("aria-hidden", "true");
+    b.style.left = x + "px";
+    b.style.top = y + "px";
+    const puntas = [];
+    for (let k = 0; k < 32; k++) {
+      const ang = (Math.PI * 2 * k) / 32 - Math.PI / 2;
+      const r = k % 2 ? 36 : 49;
+      puntas.push((50 + r * Math.cos(ang)).toFixed(1) + "," + (50 + r * Math.sin(ang)).toFixed(1));
+    }
+    const destello = `<svg viewBox="0 0 100 100"><polygon points="${puntas.join(" ")}" fill="#f6c443" stroke="#1e2230" stroke-width="2.5" stroke-linejoin="round"/><circle cx="50" cy="50" r="30" fill="#fff6d2" stroke="#1e2230" stroke-width="2"/></svg>`;
+    const chispas = Array.from({ length: 9 }, (_, k) => {
+      const ang = (Math.PI * 2 * k) / 9 + Math.random() * 0.5;
+      const d = 62 + Math.random() * 34;
+      return `<span class="chispa" style="--dx:${(Math.cos(ang) * d).toFixed(0)}px;--dy:${(Math.sin(ang) * d - 18).toFixed(0)}px;animation-delay:${(k * 0.03).toFixed(2)}s"></span>`;
+    }).join("");
+    b.innerHTML = chispas + destello + `<span class="ono">${texto || L.aciertos[Math.floor(Math.random() * L.aciertos.length)]}</span><img class="pj" src="${img(rol().id, "contento")}" alt="">`;
+    contenedor.appendChild(b);
+    setTimeout(() => b.classList.add("sale"), 1300);
+    setTimeout(() => b.remove(), 1800);
+    return b;
+  }
+  // En las viñetas, la explosión es una imagen fija: sin animación ni humo.
+  function explosionFija() {
+    return `<div class="boom mini estatica" aria-hidden="true" style="left:70%;top:50%">${estallido()}<span class="ono">${ONOMATOPEYAS[Math.floor(Math.random() * ONOMATOPEYAS.length)]}</span></div>`;
+  }
+
+  /* ---------- Insignia ---------- */
+  const insignia = document.getElementById("insignia");
+  const insigniaBoton = document.getElementById("insignia-boton");
+  let reaccionTimer;
+  function cerrarInsignia() { insignia.classList.remove("abierta"); insigniaBoton.setAttribute("aria-expanded", "false"); }
+  // Lo básico vive en el viaje de Empleado. Se avisa una sola vez, sin insistir:
+  // al completar la parada 1 con otro rol, si el viaje de Empleado no está hecho.
+  const ROL_BASE = "empleado";
+  function avisoEmpleadoPendiente() {
+    const r = rol().id, m1 = T.modulos[0];
+    if (r === ROL_BASE || guardado.avisoEmpleado || !T.roles.some(x => x.id === ROL_BASE)) return false;
+    if (!(ganada(r, m1.id, "uso") && ganada(r, m1.id, "seguro"))) return false;
+    return !T.modulos.every(m => ganada(ROL_BASE, m.id, "uso") && ganada(ROL_BASE, m.id, "seguro"));
+  }
+  function pintarInsignia(estado = "pensativo") {
+    const r = rol();
+    document.documentElement.style.setProperty("--rol", r.color);
+    document.getElementById("insignia-img").src = img(r.id, estado);
+    document.getElementById("insignia-nombre").textContent = r.nombre;
+    const aviso = avisoEmpleadoPendiente();
+    const base = T.roles.find(x => x.id === ROL_BASE);
+    insignia.classList.toggle("con-aviso", aviso);
+    insigniaBoton.title = aviso ? L.avisoEmpAria : "";
+    document.getElementById("insignia-menu").innerHTML = (aviso ? `
+      <div class="aviso-emp" role="note">
+        <strong>${L.avisoEmpTitulo}</strong>
+        <p>${L.avisoEmpTexto(esc(base.nombre))}</p>
+        <div class="acciones"><button type="button" data-rol="${ROL_BASE}">${L.avisoEmpIr(esc(base.nombre))}</button><button type="button" class="sec" data-cerrar-aviso>${L.avisoEmpNo}</button></div>
+      </div>` : "") + T.roles.map(x => `
+      <button role="menuitemradio" aria-checked="${x.id === r.id}" data-rol="${x.id}" style="--c:${x.color}">
+        <img src="${img(x.id, "pensativo")}" alt=""><span>${esc(x.nombre)}<small>${esc(x.traje)}</small></span>
+      </button>`).join("");
+  }
+  function reaccionar(estado) {
+    clearTimeout(reaccionTimer);
+    pintarInsignia(estado);
+    insignia.classList.remove("reacciona-boom");
+    insignia.offsetWidth;
+    insignia.classList.add("reacciona", estado === "boom" ? "reacciona-boom" : "reacciona");
+    reaccionTimer = setTimeout(() => { insignia.classList.remove("reacciona", "reacciona-boom"); pintarInsignia(); }, 1800);
+  }
+  insigniaBoton.addEventListener("click", e => {
+    e.stopPropagation();
+    const desplegada = insignia.classList.toggle("abierta");
+    insigniaBoton.setAttribute("aria-expanded", desplegada);
+    // El aviso se enseña una vez: al abrirlo queda visto y el punto desaparece.
+    if (desplegada && insignia.classList.contains("con-aviso")) { guardado.avisoEmpleado = true; guardar(); insignia.classList.remove("con-aviso"); insigniaBoton.title = ""; }
+  });
+  document.getElementById("insignia-menu").addEventListener("click", e => {
+    if (e.target.closest("[data-cerrar-aviso]")) { cerrarInsignia(); pintarInsignia(); return; }
+    const b = e.target.closest("[data-rol]"); if (!b) return;
+    cambiarRol(b.dataset.rol); cerrarInsignia();
+  });
+  document.addEventListener("click", e => { if (!insignia.contains(e.target)) cerrarInsignia(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") cerrarInsignia(); });
+  function cambiarRol(id) {
+    guardado.rol = id; guardar();
+    // Cambiar de rol no salta casillas: si esta no está abierta para el nuevo rol, al tablero.
+    if (!vistaCasilla.hidden && +document.getElementById("casilla").dataset.i >= 0 && !abierta(+document.getElementById("casilla").dataset.i)) { pintarInsignia(); aTablero(); return; }
+    pintarTodo();
+  }
+
+  /* ---------- Tablero ---------- */
+  // Mapas ilustrados: posiciones medidas sobre cada imagen, en % de su ancho (x) y alto (y).
+  // nodos: centro de cada círculo pintado. rotulos: dónde va el cartel (tapa el pintado).
+  const MAPAS = {
+    ancho: {
+      src: "img/mapa-ancho.webp", ratio: 2752 / 1236, d: 6.9, ficha: 5.2, fs: "clamp(10.5px, 1.1cqw, 15px)",
+      nodos: [[13.4, 69.1], [23.4, 35.5], [37.9, 19.5], [53.1, 31.7], [65.8, 53.3], [77.7, 70.2], [88.3, 69.1]],
+      // [centro x, arriba, ancho, alto mínimo]
+      rotulos: [[13.4, 77.0, 11.5, 7.6], [23.4, 43.6, 11.5, 9.6], [37.9, 27.2, 11.5, 12.3], [53.2, 40.0, 11.5, 9.6],
+                [65.8, 61.7, 11.5, 9.6], [77.8, 77.6, 9.8, 12.6], [88.3, 77.6, 10.8, 12.4]]
+    },
+    estrecho: {
+      src: "img/mapa-movil.webp", ratio: 1536 / 2485, d: 12.6, ficha: 11, fs: "clamp(11px, 3.3cqw, 14px)",
+      nodos: [[50.8, 8.1], [59.0, 20.9], [49.6, 33.5], [61.0, 45.1], [49.6, 60.0], [38.8, 72.6], [51.0, 87.2]],
+      // [izquierda, centro y, ancho, alto mínimo]
+      rotulos: [[59.4, 7.8, 33, 8.6], [67.3, 20.9, 31.2, 8.6], [58.2, 33.4, 33, 8.6], [69.4, 44.9, 29.1, 8.6],
+                [57.7, 60.6, 33, 8.6], [47.4, 72.4, 33, 8.6], [8.9, 87.8, 33, 8.6]]
+    }
+  };
+  const tablero = document.getElementById("tablero");
+  // Se elige por el ancho disponible (también cuando el mapa está oculto).
+  const mapa = () => MAPAS[(tablero.clientWidth || Math.min(1400, document.documentElement.clientWidth - 32)) < 760 ? "estrecho" : "ancho"];
+  function puntos() {
+    const M = mapa();
+    return { estrecho: M === MAPAS.estrecho, lista: M.nodos };
+  }
+  // La ficha (el personaje) se pone a la izquierda del círculo, de pie a su altura.
+  function lugarFicha(i) {
+    const M = mapa(); const [x, y] = M.nodos[i];
+    return { left: `${x - M.d * 0.95}%`, top: `${y + (M.d / 2) * M.ratio * 0.9}%` };
+  }
+
+  function pintarTablero() {
+    const r = rol();
+    const M = mapa();
+    const estrecho = M === MAPAS.estrecho;
+    tablero.style.setProperty("--ratio", M.ratio);
+    tablero.style.setProperty("--mapa", `url("${M.src}")`);
+    tablero.style.setProperty("--fs", M.fs);
+    const aqui = Math.min(posDe(), ULTIMA);
+    const nodos = CASILLAS.map((c, i) => {
+      const [x, y] = M.nodos[i];
+      const m = c.modulo;
+      const a = m && ganada(r.id, m.id, "uso"), b = m && ganada(r.id, m.id, "seguro");
+      const libre = abierta(i);
+      const [rx, ry, rw, rh] = M.rotulos[i];
+      const sitio = estrecho
+        ? `left:${rx}%;top:${ry}%;width:${rw}%;min-height:${rh}%;transform:translateY(-50%)`
+        : `left:${rx}%;top:${ry}%;width:${rw}%;min-height:${rh}%;transform:translateX(-50%)`;
+      const estado = `${a && b ? "completa" : ""} ${libre ? "" : "bloqueada"}`;
+      return `
+        <button class="nodo ${estado} ${i === aqui ? "aqui" : ""}" style="left:${x}%;top:${y}%;width:${M.d}%" data-ir="${i}" aria-disabled="${!libre}" aria-label="${L.parada(i)}: ${esc(c.titulo)}${libre ? "" : L.bloqueadaAria}">
+          <span class="nodo-aro"></span>${libre ? "" : `<span class="candado">${ICONO_CANDADO}</span>`}
+        </button>
+        <div class="rotulo ${estado}" style="${sitio}" data-ir="${i}" aria-hidden="true">
+          <strong>${esc(c.titulo)}</strong>
+          <small>${c.intro ? L.empiezaAqui : c.meta && libre ? L.finViaje : libre ? L.parada(i) : (i === 1 ? L.pasaSalida : L.completa(i - 1))}${m ? `<span class="medias" title="${L.mediasTitle}"><i class="${a ? "si" : ""}"></i><i class="${b ? "si" : ""}"></i></span>` : ""}</small>
+        </div>`;
+    }).join("");
+    const f = lugarFicha(aqui);
+    tablero.innerHTML = `${nodos}
+      <div class="ficha" id="ficha" style="left:${f.left};top:${f.top};width:${M.ficha}%"><img src="${img(r.id, "pensativo")}" alt=""></div>`;
+  }
+
+  tablero.addEventListener("click", e => {
+    const c = e.target.closest("[data-ir]");
+    if (c && !abierta(+c.dataset.ir)) {
+      const n = tablero.querySelector(`.nodo[data-ir="${c.dataset.ir}"]`);
+      if (n) { n.classList.remove("sacude"); n.offsetWidth; n.classList.add("sacude"); }
+      return;
+    }
+    if (c) return entrar(+c.dataset.ir, c);
+  });
+  let rTimer;
+  addEventListener("resize", () => { clearTimeout(rTimer); rTimer = setTimeout(() => { if (!vistaTablero.hidden) pintarTablero(); }, 120); });
+
+  /* ---------- Zoom: tablero ⇄ casilla ---------- */
+  const vistaTablero = document.getElementById("vista-tablero");
+  const vistaCasilla = document.getElementById("vista-casilla");
+  let scrollTablero = 0, ultimoOrigen = "50% 50%";
+
+  function origenDe(i) {
+    const { lista } = puntos();
+    const [x, y] = lista[i];
+    return `${x}% ${y}%`;
+  }
+
+  function entrar(i, desde) {
+    scrollTablero = scrollY;
+    // la ficha se mueve primero a la casilla, luego zoom
+    const mover = posDe() !== i && !reducido;
+    guardado.pos[guardado.rol] = i; guardar();
+    const ficha = document.getElementById("ficha");
+    if (ficha) { const f = lugarFicha(i); ficha.style.left = f.left; ficha.style.top = f.top; }
+    const zoom = () => {
+      if (reducido) return ir(i);
+      ultimoOrigen = origenDe(i);
+      tablero.style.transformOrigin = ultimoOrigen;
+      tablero.classList.add("zoom");
+      setTimeout(() => ir(i), 560);
+    };
+    mover ? setTimeout(zoom, 550) : zoom();
+  }
+
+  function ir(i) { location.hash = "#parada-" + i; }
+  function aTablero() { location.hash = "#mapa"; }
+
+  function enfocarTitulo() {
+    const h = document.querySelector("#casilla h1");
+    if (h) { h.tabIndex = -1; h.focus({ preventScroll: true }); }
+  }
+  function rutear() {
+    const pagina = location.hash === "#glosario" || location.hash === "#cambios" ? location.hash.slice(1) : "";
+    const m = location.hash.match(/^#parada-(\d+)(?:\/(uso|seguro|implantar))?$/);
+    if (pagina) {
+      vistaTablero.hidden = true;
+      vistaCasilla.hidden = false;
+      pintarPagina(pagina);
+      scrollTo(0, 0); enfocarTitulo();
+    } else if (m && +m[1] >= 0 && +m[1] <= ULTIMA) {
+      const i = +m[1];
+      if (!abierta(i)) { location.replace("#mapa"); return; }
+      if (i === 0) guardado.salida[guardado.rol] = true;
+      guardado.pos[guardado.rol] = i; guardar();
+      // La dirección puede traer el camino: #parada-3/seguro
+      const mod = CASILLAS[i].modulo;
+      if (mod && m[2] && tieneTramo(guardado.rol, mod, m[2])) pestanaActiva[mod.id] = m[2];
+      vistaTablero.hidden = true;
+      vistaCasilla.hidden = false;
+      pintarCasilla(i);
+      scrollTo(0, 0); enfocarTitulo();
+    } else {
+      if (location.hash && location.hash !== "#mapa") history.replaceState(null, "", location.pathname + location.search + "#mapa");
+      const veniaDeCasilla = !vistaCasilla.hidden;
+      vistaCasilla.hidden = true;
+      vistaTablero.hidden = false;
+      pintarTablero(); pintarMarcador();
+      if (veniaDeCasilla && !reducido) {
+        tablero.style.transformOrigin = origenDe(posDe());
+        tablero.classList.add("sin-transicion", "zoom");
+        tablero.offsetWidth;
+        tablero.classList.remove("sin-transicion");
+        requestAnimationFrame(() => tablero.classList.remove("zoom"));
+        scrollTo(0, scrollTablero);
+      } else {
+        tablero.classList.remove("zoom");
+      }
+    }
+  }
+  addEventListener("hashchange", rutear);
+  document.getElementById("volver").addEventListener("click", aTablero);
+
+  /* ---------- Vista casilla ---------- */
+  function pintarMigas(i) {
+    const r = rol();
+    document.getElementById("migas").innerHTML = CASILLAS.map((c, k) => {
+      const m = c.modulo;
+      const comp = m && ganada(r.id, m.id, "uso") && ganada(r.id, m.id, "seguro");
+      const libre = abierta(k);
+      return `<button data-casilla="${k}" ${k === i ? 'aria-current="step"' : ""} ${libre ? "" : "disabled"} class="${comp ? "completa" : ""}" title="${esc(c.titulo)}${libre ? "" : L.bloqueadaTitle}">${!libre ? "🔒" : c.meta ? "★" : k}</button>`;
+    }).join("");
+  }
+  document.getElementById("migas").addEventListener("click", e => {
+    const b = e.target.closest("[data-casilla]"); if (b) ir(+b.dataset.casilla);
+  });
+
+  function pintarCasilla(i) {
+    nuevoBloque();
+    const c = CASILLAS[i];
+    pintarMigas(i);
+    const cab = `
+      <div class="casilla-cab">
+        <div class="disco-grande">${icono(c.id)}</div>
+        <div><span class="kicker">${c.meta ? L.kickerFinal : c.intro ? L.antesSalir : L.paradaDe(i, NIVELES)}</span><h1>${esc(c.titulo)}</h1><p>${tx(c.que)}</p></div>
+      </div>`;
+    const pie = pieNav(i);
+
+    let cuerpo;
+    if (c.intro) {
+      const extras = [T.intro.progreso, T.intro.justificante, T.intro.privacidad].filter(Boolean);
+      cuerpo = `
+        <div class="hoja"><div class="panel">
+          ${T.intro.vigencia ? `<div class="aviso-fecha" role="note"><span aria-hidden="true">⏳</span><p><strong>${esc(T.intro.vigencia.titulo)}</strong> ${tx(T.intro.vigencia.texto.replace("{fecha}", T.revisado || ""))}</p></div>` : ""}
+          <div class="bloque"><h4>${L.eligeRol}</h4>
+            <p style="margin:-4px 0 14px;color:var(--suave);max-width:70ch">${L.mismoPersonaje}${T.intro.base ? " " + tx(T.intro.base) : ""}</p>
+            <div class="trajes" id="trajes">${pintarTrajes()}</div>
+            <div class="botones" style="margin-top:16px"><button class="btn" data-casilla-nav="1">${L.empezarPor} «${esc(CASILLAS[1].titulo)}» →</button></div>
+          </div>
+          <div class="bloque"><h4>${L.queVamos}</h4><p class="plan">${tx(T.intro.plan)}</p>${T.intro.trabajo ? `<p class="plan-nota">${tx(T.intro.trabajo)}</p>` : ""}</div>
+          <div class="bloque"><h4>${L.comoFunciona}</h4><ol class="reglas">${T.intro.reglas.map(x => `<li><span>${tx(x)}</span></li>`).join("")}</ol>
+            ${extras.length ? `<ul class="antes">${extras.map(x => `<li>${tx(x)}</li>`).join("")}</ul>` : ""}</div>
+          <div class="bloque">${pintarRegla()}</div>
+          ${pintarEmpresa()}
+          <p class="autor">${T.intro.autor ? tx(T.intro.autor) + " " : ""}<a href="${IDIOMA === "en" ? "for-companies.html" : "empresas.html"}">${L.paraEmpresas}</a></p>
+        </div></div>`;
+    } else if (c.meta) {
+      cuerpo = pintarMeta();
+    } else {
+      const m = c.modulo;
+      const activa = pestanaActiva[m.id] || "uso";
+      const r = rol();
+      cuerpo = pintarSitua(m.situa) + (m.anatomia ? pintarAnatomia(m.anatomia) : "") + `
+        <div class="hoja">
+          <div class="pestanas" role="tablist">
+            ${tramosDe(r.id, m).map(t => `
+              <button class="pestana" role="tab" aria-selected="${t.id === activa}" data-tramo="${t.id}">
+                <span>${t.icono} ${t.nombre} <small class="pest-min">${L.minutos(minutosDe(r.id, m, t.id))}</small></span>
+                ${media(t.id, estadoPestana(r.id, m, t.id))}
+              </button>`).join("")}
+          </div>
+          <div class="panel" role="tabpanel" id="panel">${pintarTramo(m, activa)}</div>
+        </div>`;
+    }
+    const cont = document.getElementById("casilla");
+    cont.dataset.i = i;
+    cont.innerHTML = cab + cuerpo + pie;
+    niveles(cont);
+    cont.querySelectorAll(".examen[data-k]").forEach(pintarExamen);
+    if (c.meta) alLlegarMeta();
+  }
+
+  // Para un lector de pantalla: bloque = nivel 2, pregunta = nivel 3 (los h4 y h5 se quedan como están a la vista).
+  function niveles(raiz) {
+    raiz.querySelectorAll("h4").forEach(h => { h.setAttribute("role", "heading"); h.setAttribute("aria-level", "2"); });
+    raiz.querySelectorAll("h5").forEach(h => { h.setAttribute("role", "heading"); h.setAttribute("aria-level", "3"); });
+    raiz.querySelectorAll(".justificante h3").forEach(h => h.setAttribute("aria-level", "2"));
+  }
+  // Páginas sueltas: el glosario entero y el registro de cambios.
+  function pintarPagina(tipo) {
+    pintarMigas(-1);
+    let cuerpo;
+    if (tipo === "glosario") {
+      const vistos = new Set();
+      const lista = (T.glosario || []).filter(g => !vistos.has(g.d) && vistos.add(g.d)).sort((a, b) => a.t.localeCompare(b.t, L.locale, { sensitivity: "base" }));
+      cuerpo = `<dl class="glosario-lista">${lista.map(g => `<div><dt>${esc(g.t)}</dt><dd>${esc(g.d)}</dd></div>`).join("")}</dl>`;
+    } else {
+      cuerpo = (T.cambios || []).map(c => `<div class="bloque"><h4>${L.versionN(esc(c.v))} · ${esc(c.fecha)}</h4><ul class="cambios">${(c.que || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")
+        + `<p class="plan-nota">${T.revision ? esc(T.revision) + " " : ""}${L.revisado(T.revisado, T.version)}.</p>`;
+    }
+    const cont = document.getElementById("casilla");
+    cont.dataset.i = -1;
+    cont.innerHTML = `
+      <div class="casilla-cab">
+        <div class="disco-grande">${icono("salida")}</div>
+        <div><span class="kicker">${esc(T.titulo)}</span><h1>${tipo === "glosario" ? L.glosario : L.cambios}</h1><p>${tipo === "glosario" ? L.glosarioQue : L.cambiosQue}</p></div>
+      </div>
+      <div class="hoja"><div class="panel">${cuerpo}</div></div>
+      <div class="pie-nav" id="pie-nav"><span></span><button class="btn" data-casilla-nav="tablero">${L.volverMapaBtn}</button></div>`;
+    niveles(cont);
+  }
+
+  // De qué hablamos en esta parada y de qué no (m.situa: { es, noEs, nota? }).
+  function pintarSitua(sit) {
+    if (!sit) return "";
+    return `
+      <section class="situa" aria-label="${L.situaEs}">
+        <div><h4>${L.situaEs}</h4><p>${tx(sit.es)}</p></div>
+        <div class="situa-no"><h4>${L.situaNo}</h4><p>${tx(sit.noEs)}</p></div>
+        ${sit.nota ? `<p class="situa-nota">${tx(sit.nota)}</p>` : ""}
+      </section>`;
+  }
+
+  function pintarRegla() {
+    const g = T.regla;
+    return `
+      <section class="regla" aria-label="${esc(g.titulo)}">
+        <span class="kicker">${esc(g.titulo)}</span>
+        <blockquote>${esc(g.frase)}</blockquote>
+        <p>${esc(g.texto)}</p>
+        <div class="verbos">${g.verbos.map((v, i) => `<span>${i + 1} · ${esc(v)}</span>`).join("")}</div>
+      </section>`;
+  }
+
+  function pintarAnatomia(a) {
+    const r = rol();
+    const pasos = a.pasos.map(p => `
+      <li class="paso ${p.quien === "modelo" ? "modelo" : ""}">
+        <span class="quien">${p.quien === "modelo" ? L.modelo : L.codigo}</span>
+        <strong>${esc(p.nombre)}</strong><p>${tx(p.texto)}</p>
+      </li>`).join("");
+    return `
+      <section class="anatomia" aria-label="${esc(a.titulo)}">
+        <div class="anatomia-cab"><h2>${esc(a.titulo)}</h2><span class="lema">${esc(a.lema)}</span></div>
+        <ol class="pasos">${pasos}
+          <li class="paso persona"><strong>${L.unaPersona}</strong><p>${tx(a.hitl)}</p>
+            <div class="sellos">${L.sellos.map(x => `<span>${x}</span>`).join("")}</div></li>
+        </ol>
+        ${a.porRol && a.porRol[r.id] ? `<div class="tu-angulo"><img src="${img(r.id, "pensativo")}" alt=""><p><small>${L.desdeTuRol} · ${esc(r.nombre)}</small>${tx(a.porRol[r.id])}</p></div>` : ""}
+        <p class="eco">${tx(a.eco)}</p>
+        ${a.enlace ? listaEnlaces([a.enlace]) : ""}
+      </section>`;
+  }
+
+  function progresoDe(r) {
+    let n = 0;
+    T.modulos.forEach(m => { n += ganada(r, m.id, "uso") + ganada(r, m.id, "seguro"); });
+    return n; // medias estrellas
+  }
+
+  function avisoRol(r, modo = "completo") {
+    const a = r.aviso; if (!a || !a.texto) return "";
+    if (modo === "breve") return a.breve ? `<div class="aviso-rol breve" role="note">${tx(a.breve)}</div>` : "";
+    const enl = modo === "conEnlace" && a.enlace ? ` <a href="${esc(a.enlace.url)}" target="_blank" rel="noopener">${esc(a.enlace.t)}</a>${a.enlace.propio ? ' <span class="sello">epifaneia</span>' : ""}` : "";
+    return `<div class="aviso-rol" role="note"><strong>${esc(a.titulo || L.avisoTitulo)}</strong> ${tx(modo === "conEnlace" ? a.texto : a.textoSinEnlace || a.texto)}${enl}</div>`;
+  }
+  const completos = () => T.roles.filter(x => progresoDe(x.id) === NIVELES * 2);
+  // El sello: roseta dorada con cintas (dibujo propio).
+  function sello(anio) {
+    const pts = [];
+    for (let k = 0; k < 72; k++) { const a = (Math.PI * 2 * k) / 72; const rr = k % 2 ? 84 : 92; pts.push((100 + rr * Math.cos(a)).toFixed(1) + "," + (100 + rr * Math.sin(a)).toFixed(1)); }
+    const estrella = "M100 72l8.4 17 18.8 2.7-13.6 13.3 3.2 18.7L100 115l-16.8 8.8 3.2-18.7-13.6-13.3 18.8-2.7z";
+    return `<svg viewBox="0 0 200 262" aria-hidden="true">
+      <defs>
+        <radialGradient id="sOroR" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff6cf"/><stop offset=".45" stop-color="#ecc75e"/><stop offset="1" stop-color="#a5761c"/></radialGradient>
+        <linearGradient id="sOroL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f9e39a"/><stop offset=".55" stop-color="#c8962c"/><stop offset="1" stop-color="#f0cf74"/></linearGradient>
+        <linearGradient id="sCinta" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9ab3f"/><stop offset="1" stop-color="#9c6e17"/></linearGradient>
+        <path id="sCirc" d="M100,100 m-63,0 a63,63 0 1,1 126,0 a63,63 0 1,1 -126,0"/>
+      </defs>
+      <polygon points="70,150 100,160 90,258 77,238 58,252" fill="url(#sCinta)" stroke="#7a5512" stroke-width="1.2"/>
+      <polygon points="130,150 100,160 110,258 123,238 142,252" fill="url(#sCinta)" stroke="#7a5512" stroke-width="1.2"/>
+      <polygon points="${pts.join(" ")}" fill="url(#sOroL)" stroke="#8a6214" stroke-width="1.4" stroke-linejoin="round"/>
+      <circle cx="100" cy="100" r="76" fill="url(#sOroR)" stroke="#8a6214" stroke-width="1.6"/>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="#fff3c4" stroke-width="1.2" opacity=".85"/>
+      <circle cx="100" cy="100" r="54" fill="url(#sOroL)" stroke="#8a6214" stroke-width="1.2"/>
+      <text font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="11.5" letter-spacing="2.2" fill="#6e4c0f"><textPath href="#sCirc" startOffset="2%">${esc(L.selloTexto)} · ${anio} · ${esc(L.selloTexto)} · ${anio} ·</textPath></text>
+      <path d="${estrella}" fill="#fff4cc" stroke="#8a6214" stroke-width="1.4" stroke-linejoin="round"/>
+    </svg>`;
+  }
+  const tamNombre = n => (n || "").length > 44 ? "muy-largo" : (n || "").length > 28 ? "largo" : "";
+  function pintarDiploma() {
+    const hechos = completos();
+    if (!hechos.length) return "";
+    const fechas = guardado.fechas || {};
+    const ult = Object.entries(fechas).filter(([k]) => hechos.some(x => k.startsWith(x.id + "|"))).map(([, v]) => v).sort().pop();
+    const d = ult ? new Date(ult) : new Date();
+    const fecha = d.toLocaleDateString(L.locale, { day: "numeric", month: "long", year: "numeric" });
+    const nombres = new Intl.ListFormat(L.locale, { type: "conjunction" }).format(hechos.map(x => x.nombre));
+    return `
+      <div class="diploma-zona">
+        <label class="no-imprimir" for="nombre-dip">${L.nombreDip}</label>
+        <input id="nombre-dip" class="no-imprimir" autocomplete="name" value="${esc(guardado.nombre || "")}">
+        <div class="diploma" id="diploma">
+          <div class="dip-banda"></div>
+          <div class="dip-cuerpo">
+            <div class="dip-pjs" style="--n:${hechos.length}">${hechos.map(x => `<img src="${img(x.id, "contento")}" alt="${esc(x.nombre)}">`).join("")}</div>
+            <p class="dip-kicker">${esc(T.titulo)}</p>
+            <h2 class="dip-titulo ${L.diploma.length > 12 ? "largo" : ""}">${L.diploma}</h2>
+            <p class="dip-se">${L.seConcede}</p>
+            <p class="dip-nombre ${tamNombre(guardado.nombre)}" id="dip-nombre">${esc(guardado.nombre || "")}</p>
+            <p class="dip-texto">${L.dipTexto(esc(nombres), hechos.length)}</p>
+            <div class="dip-estrellas">${T.modulos.map(() => estrella(true, true)).join("")}</div>
+            <div class="dip-firma"><span>${esc(fecha)}</span><span>${L.dipVersion(esc(T.version || ""))}</span></div>
+          </div>
+          <div class="dip-sello">${L.selloImg && d.getFullYear() === 2026 ? `<img src="${L.selloImg}" alt="">` : sello(d.getFullYear())}</div>
+        </div>
+        <p class="dip-aviso">${L.dipAviso}</p>
+        <div class="botones no-imprimir"><button class="btn" type="button" data-imprimir-diploma>${L.imprimirDiploma}</button><button class="btn sec" type="button" data-confeti>${L.otraVezConfeti}</button></div>
+      </div>`;
+  }
+  function confeti() {
+    if (reducido) return;
+    const cols = [...T.roles.map(x => x.color), "#e0a526", "#f6c443", "#2f8f57"];
+    const c = document.createElement("div");
+    c.className = "confeti"; c.setAttribute("aria-hidden", "true");
+    c.innerHTML = Array.from({ length: 150 }, () => `<i style="left:${(Math.random() * 100).toFixed(1)}%;background:${cols[Math.floor(Math.random() * cols.length)]};--x:${(Math.random() * 240 - 120).toFixed(0)}px;--r:${(Math.random() * 900 - 450).toFixed(0)}deg;--t:${(2.6 + Math.random() * 2).toFixed(2)}s;--d:${(Math.random() * .7).toFixed(2)}s"></i>`).join("");
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 5600);
+  }
+  // Al llegar al Destino con un viaje recién terminado: confeti, una vez por viaje.
+  function alLlegarMeta() {
+    const nuevos = completos().map(x => x.id).filter(id => !(guardado.celebrados || []).includes(id));
+    if (!nuevos.length) return;
+    guardado.celebrados = [...(guardado.celebrados || []), ...nuevos]; guardar();
+    setTimeout(confeti, 250);
+  }
+  function imprimirDiploma() {
+    const dip = document.getElementById("diploma"); if (!dip) return;
+    let caja = document.getElementById("impresion");
+    if (!caja) { caja = document.createElement("div"); caja.id = "impresion"; document.body.appendChild(caja); }
+    // Copia con identificadores propios: los degradados y recortes del SVG no pueden apuntar al original, que no se imprime.
+    caja.innerHTML = dip.outerHTML.replace(/id="([^"]+)"/g, 'id="imp-$1"').replace(/url\(#([^)]+)\)/g, "url(#imp-$1)").replace(/href="#([^"]+)"/g, 'href="#imp-$1"');
+    const pag = document.createElement("style"); pag.id = "pagina-diploma"; pag.textContent = "@page{size:A4 landscape;margin:10mm}";
+    document.head.appendChild(pag);
+    document.body.classList.add("imprime-diploma");
+    const fin = () => { document.body.classList.remove("imprime-diploma"); pag.remove(); removeEventListener("afterprint", fin); };
+    addEventListener("afterprint", fin);
+    window.print();
+  }
+  function pintarMeta() {
+    const r = rol();
+    const n = progresoDe(r.id);
+    const est = T.modulos.map(m => estrella(ganada(r.id, m.id, "uso"), ganada(r.id, m.id, "seguro"))).join("");
+    const otros = T.roles.filter(x => x.id !== r.id).map(x => {
+      const nx = progresoDe(x.id);
+      const donde = nx === NIVELES * 2 ? L.viajeCompleto : posDe(x.id) ? L.vaPor(posDe(x.id)) : L.sinEmpezar;
+      return `
+        <button class="otro" style="--c:${x.color}" data-rol="${x.id}">
+          <img src="${img(x.id, "pensativo")}" alt="">
+          <span><strong>${esc(x.nombre)}</strong><small>${donde} · ${num(nx / 2)} ★</small>
+          <em>${L.hacerViaje}</em></span>
+        </button>`;
+    }).join("");
+    return `
+      <div class="hoja"><div class="panel">
+        <div class="meta-final">
+          <img src="${img(r.id, "contento")}" alt="">
+          <div>
+            <span class="kicker">${esc(r.nombre)}</span>
+            <h2>${L.estrellasDe(num(n / 2), NIVELES)}</h2>
+            <div class="estrellas">${est}</div>
+            <p>${esc(T.meta.hecho)}</p>
+          </div>
+        </div>
+        ${avisoRol(r) ? `<div class="bloque">${avisoRol(r, "conEnlace")}</div>` : ""}
+        <div class="bloque"><h4>${L.teLlevas}</h4><ol class="llevas">${T.modulos.map((m, k) => { const cc = m.tramos.seguro.porRol[r.id]; const idea = cc && cc.ideas && cc.ideas[0]; return idea ? `<li><b>${k + 1}</b><span>${tx(idea)}</span></li>` : ""; }).join("")}</ol></div>
+        <div class="bloque">${pintarDiploma()}</div>
+        <div class="bloque">${pintarRegla()}</div>
+        <div class="bloque">${pintarJustificante(r)}</div>
+        <div class="bloque"><h4>${L.otrosRoles}</h4><div class="otros">${otros}</div></div>
+        <div class="bloque"><h4>${L.paraAmpliar}</h4>${listaEnlaces(T.meta.enlaces)}</div>
+      </div></div>`;
+  }
+
+  // Bloque opcional de la organización (T.empresa).
+  function contacto(v) {
+    const s = String(v);
+    if (/^https?:\/\//.test(s)) return `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`;
+    if (/^[^\s@]+@[^\s@]+$/.test(s)) return `<a href="mailto:${esc(s)}">${esc(s)}</a>`;
+    return esc(s);
+  }
+  const NOMBRES_CONTACTO = L.contactos;
+  function listaContactos(c) {
+    return Object.entries(c || {}).filter(([, v]) => v)
+      .map(([k, v]) => `<li><strong>${esc(NOMBRES_CONTACTO[k] || k)}:</strong> ${contacto(v)}</li>`).join("");
+  }
+  function pintarEmpresa() {
+    const e = T.empresa;
+    if (!e) return "";
+    const nombreParada = n => T.modulos[n - 1] ? `${n} · ${esc(T.modulos[n - 1].titulo)}` : String(n);
+    const herr = Object.entries(e.herramientas || {}).map(([id, v]) => {
+      const n = T.modulos.findIndex(m => m.id === id);
+      return n >= 0 && v ? `<li><strong>${L.parada(nombreParada(n + 1))}:</strong> ${esc(v)}</li>` : "";
+    }).join("");
+    const oblig = Object.entries(e.obligatorias || {}).map(([rid, ns]) => {
+      const rr = T.roles.find(x => x.id === rid);
+      return rr ? `<li><strong>${esc(rr.nombre)}:</strong> ${L.paradasLista(ns.map(Number).join(", "))}</li>` : "";
+    }).join("");
+    const cont = listaContactos(e.contactos);
+    return `
+      <div class="bloque"><h4>${L.enOrg(esc(e.nombre || L.tuOrg))}</h4>
+        ${herr ? `<p style="margin:0">${L.herrAprob}</p><ul class="empresa-lista">${herr}</ul>` : ""}
+        ${e.nunca && e.nunca.length ? `<p style="margin:10px 0 0">${L.nuncaSale}</p><ul class="empresa-lista">${e.nunca.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        ${e.politica && e.politica.url ? `<p style="margin:10px 0 0"><a href="${esc(e.politica.url)}" target="_blank" rel="noopener">${esc(e.politica.t || L.politica)}</a></p>` : ""}
+        ${cont ? `<p style="margin:10px 0 0">${L.aQuien}</p><ul class="empresa-lista">${cont}</ul>` : ""}
+        ${oblig ? `<p style="margin:10px 0 0">${L.obligatorias}</p><ul class="empresa-lista">${oblig}</ul>` : ""}
+        ${e.externos ? `<p style="margin:10px 0 0;color:var(--suave)">${esc(e.externos)}</p>` : ""}
+      </div>`;
+  }
+  function empresaQA(qid, modId) {
+    const e = T.empresa;
+    if (!e) return "";
+    const cab = `<span class="cab">${L.enOrg(esc(e.nombre || L.tuOrg))}</span>`;
+    if (qid === "protege") {
+      const h = (e.herramientas || {})[modId];
+      const pol = e.politica && e.politica.url ? ` <a href="${esc(e.politica.url)}" target="_blank" rel="noopener">${esc(e.politica.t || L.politica)}</a>.` : "";
+      return h || pol ? `<p class="qa-empresa">${cab}${h ? L.herramientaAprobada(esc(h)) : ""}${pol}</p>` : "";
+    }
+    if (qid === "mal") {
+      const cont = listaContactos(e.contactos);
+      return cont ? `<div class="qa-empresa">${cab}${L.avisaA}<ul class="empresa-lista">${cont}</ul></div>` : "";
+    }
+    return "";
+  }
+
+  // Justificante de formación: registro para el alumno y su empresa (no es un certificado).
+  function pintarJustificante(r) {
+    const fechas = guardado.fechas || {};
+    const f = k => fechas[k] ? new Date(fechas[k]).toLocaleDateString(L.locale, { day: "numeric", month: "long", year: "numeric" }) : "";
+    const celda = (rid, mid, tid) => hecho(rid, mid, tid) ? L.superado + (f(clave(rid, mid, tid)) ? " · " + f(clave(rid, mid, tid)) : "") : L.pendiente;
+    const conImpl = T.modulos.some(m => tieneTramo(r.id, m, "implantar"));
+    const filas = T.modulos.map((m, n) => `
+      <tr><td>${L.parada(n + 1)} · ${esc(m.titulo)}</td>
+        <td>${celda(r.id, m.id, "uso")}</td>
+        <td>${celda(r.id, m.id, "seguro")}</td>${conImpl ? `<td>${tieneTramo(r.id, m, "implantar") ? celda(r.id, m.id, "implantar") : "—"}</td>` : ""}</tr>`).join("");
+    const empresa = T.empresa && T.empresa.nombre ? ` · ${esc(T.empresa.nombre)}` : "";
+    return `
+      <section class="justificante" id="justificante" aria-label="${L.justTitulo}">
+        <h3>${L.justTitulo}</h3>
+        <p class="aviso">${L.justAviso}</p>
+        <p style="margin:12px 0 0"><strong>${L.nombre}</strong> <span id="nombre-imp">${esc(guardado.nombre || "")}</span></p>
+        <p style="margin:4px 0 0"><strong>${L.formacion}</strong> ${esc(T.titulo)}${empresa} · <strong>${L.rol}</strong> ${esc(r.nombre)} · <strong>${L.tiempoEstimado}</strong> ${duracion(minutosRol(r.id))}</p>
+        <table><thead><tr><th>${L.thParada}</th><th>⚡ ${L.tramoUso}</th><th>🛡 ${L.tramoSeguro}</th>${conImpl ? `<th>🧭 ${L.tramoImplantar}</th>` : ""}</tr></thead><tbody>${filas}</tbody></table>
+        <p class="pie-just">${L.versionRev(esc(T.version || ""), esc(T.revisado || ""))}</p>
+        <div class="botones no-imprimir"><button class="btn sec" type="button" onclick="window.print()">${L.imprimir}</button></div>
+      </section>`;
+  }
+
+  const nombreTramo = id => { const t = TRAMOS.find(x => x.id === id); return `${t.icono} ${t.nombre}`; };
+  // Al superar un examen: el paso siguiente, sin tener que volver arriba a por la pestaña.
+  function botonSeguir(modId, tramoId) {
+    const r = rol().id;
+    const lista = tramosDe(r, modDe(modId)).map(t => t.id);
+    const desde = lista.indexOf(tramoId);
+    const falta = [...lista.slice(desde + 1), ...lista.slice(0, desde)].find(t => !hecho(r, modId, t));
+    if (falta) return `<button class="btn" data-ir-tramo="${falta}">${L.sigueCon} ${nombreTramo(falta)} →</button>`;
+    const i = CASILLAS.findIndex(c => c.modulo && c.modulo.id === modId);
+    if (i >= 0 && i < ULTIMA && abierta(i + 1)) return `<button class="btn" data-casilla-nav="${i + 1}">${i + 1 === ULTIMA ? L.destino : L.proxima}: ${esc(CASILLAS[i + 1].titulo)} →</button>`;
+    return "";
+  }
+  function cambiarTramo(tramoId, subir) {
+    const cont = document.getElementById("casilla");
+    const i = +cont.dataset.i;
+    const m = CASILLAS[i].modulo; if (!m) return;
+    pestanaActiva[m.id] = tramoId;
+    history.replaceState(null, "", location.pathname + location.search + "#parada-" + i + "/" + tramoId);
+    cont.querySelectorAll(".pestana").forEach(b => b.setAttribute("aria-selected", b.dataset.tramo === tramoId));
+    const panel = document.getElementById("panel");
+    panel.innerHTML = pintarTramo(m, tramoId);
+    niveles(panel);
+    panel.querySelectorAll(".examen[data-k]").forEach(pintarExamen);
+    document.getElementById("pie-nav").outerHTML = pieNav(i);
+    if (subir) {
+      const pest = cont.querySelector(`.pestana[data-tramo="${tramoId}"]`);
+      const y = cont.querySelector(".pestanas").getBoundingClientRect().top + scrollY - 96;
+      scrollTo({ top: y, behavior: reducido ? "auto" : "smooth" });
+      if (pest) pest.focus({ preventScroll: true });
+    }
+  }
+
+  function pieNav(i) {
+    const ant = i > 0 ? `<button class="btn sec" data-casilla-nav="${i - 1}">← ${esc(CASILLAS[i - 1].titulo)}</button>` : "<span></span>";
+    let sig, aviso = "";
+    const mod = CASILLAS[i].modulo;
+    const r0 = rol().id;
+    const hecha = mod && ganada(r0, mod.id, "uso") && ganada(r0, mod.id, "seguro");
+    // Lo siguiente es el próximo camino de la misma parada (uso → seguro → implantar), si falta.
+    const lista = mod ? tramosDe(r0, mod).map(t => t.id) : [];
+    const actual = mod ? (pestanaActiva[mod.id] || "uso") : "";
+    const proximo = mod && !hecha ? lista.slice(lista.indexOf(actual) + 1).find(t => !hecho(r0, mod.id, t)) : null;
+    if (i === ULTIMA) sig = `<button class="btn" data-casilla-nav="tablero">${L.volverMapaBtn}</button>`;
+    else if (proximo) sig = `<button class="btn" data-ir-tramo="${proximo}">${L.sigueCon} ${nombreTramo(proximo)} →</button>`;
+    else if (abierta(i + 1)) sig = `<button class="btn" data-casilla-nav="${i + 1}">${i === 0 ? L.primera : i + 1 === ULTIMA ? L.destino : L.proxima}: ${esc(CASILLAS[i + 1].titulo)} →</button>`;
+    else {
+      sig = `<button class="btn" disabled>🔒 ${esc(CASILLAS[i + 1].titulo)}</button>`;
+      const pendiente = mod ? lista.find(t => !hecho(r0, mod.id, t) && t !== actual) : null;
+      aviso = `<p class="aviso-bloqueo">${L.supera}${pendiente ? ` <button class="enlace-tramo" data-ir-tramo="${pendiente}">${L.faltaTramo(nombreTramo(pendiente))}</button>` : ""}</p>`;
+    }
+    return `<div class="pie-nav" id="pie-nav">${ant}${sig}${aviso}</div>`;
+  }
+
+  function pintarTrajes() {
+    return T.roles.map(r => nuevoBloque() + `
+      <div class="traje" style="--c:${r.color}">
+        <button class="traje-elegir" type="button" data-rol="${r.id}" aria-pressed="${r.id === guardado.rol}">
+          <span class="traje-img"><img src="${img(r.id, "pensativo")}" alt="" loading="lazy"${wh(r.id, "pensativo")}></span>
+          <span class="traje-txt">
+            ${r.provisional ? `<span class="etiqueta">${L.imgProv}</span>` : ""}
+            <strong class="traje-nombre">${esc(r.nombre)}</strong>
+            <span class="traje-sombrero">${esc(r.traje)}</span>
+            <span class="traje-corto">${esc(r.corto || r.quien)}</span>
+            <span class="traje-tiempo">${duracion(minutosRol(r.id))} · ${L.nCaminos(caminosRol(r.id))}</span>
+            <span class="accion">${r.id === guardado.rol ? L.rolActual : L.elegir}${r.id !== guardado.rol && posDe(r.id) ? `<small style="display:block;font-weight:400;color:var(--suave)">${L.vaPor(posDe(r.id))}</small>` : ""}</span>
+          </span>
+        </button>
+        <details class="traje-mas"><summary>${L.masSobreRol}</summary>
+          <dl><dt>${L.quien}</dt><dd>${tx(r.quien)}</dd><dt>${L.queImporta}</dt><dd>${tx(r.importa)}</dd><dt>${L.comoContamos}</dt><dd>${tx(r.registro)}</dd></dl>
+          ${r.aviso && r.aviso.corto ? `<small class="aviso-corto">${esc(r.aviso.corto)}</small>` : ""}
+        </details>
+      </div>`).join("");
+  }
+
+  // Enlaces: primero los oficiales, después los propios (con distintivo).
+  function listaEnlaces(lista) {
+    const propios = !(T.empresa && T.empresa.mostrarEnlacesPropios === false);
+    const orden = [...lista.filter(l => !l.propio), ...(propios ? lista.filter(l => l.propio) : [])];
+    return `<ul class="enlaces">${orden.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.t)}</a>${l.propio ? ' <span class="sello">epifaneia</span>' : ""}</li>`).join("")}</ul>`;
+  }
+
+  // Etiqueta de hilo entre paradas en una viñeta; si esa parada está abierta, lleva a ella.
+  function retoma(tipo, modId) {
+    const i = CASILLAS.findIndex(c => c.modulo && c.modulo.id === modId);
+    if (i < 0) return "";
+    const texto = esc(tipo === "sigue" ? L.retomamos(i) : L.vieneDe(i));
+    return abierta(i) ? `<button type="button" class="retoma" data-casilla-nav="${i}">${texto}</button>` : `<span class="retoma">${texto}</span>`;
+  }
+  function pintarTramo(m, tramoId) {
+    const r = rol();
+    const tramo = m.tramos[tramoId];
+    const c = (tramo.porRol || {})[r.id];
+    const enlaces = [...(tramo.enlaces || []), ...((c && c.enlaces) || [])];
+    const marco = tramo.marco ? `<div class="marco">${tramo.marco.map(x => `<span>${esc(x)}</span>`).join("")}</div>` : "";
+    const ampliar = (marco || enlaces.length) ? `
+      <div class="bloque"><h4>${L.paraAmpliar}</h4>${marco}
+        ${enlaces.length ? listaEnlaces(enlaces) : ""}
+      </div>` : "";
+    if (!c) {
+      return `
+        <div class="pendiente">
+          <strong>${L.pendienteEscribir(esc(r.nombre))}</strong>
+          ${tramo.previsto ? `${L.temasPrevistos}<ul>${tramo.previsto.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : L.ejIdeasExamen}
+        </div>${ampliar}`;
+    }
+    // El ejemplo puede ser compartido (Implantarlo): cada rol puede traer su propia última viñeta.
+    nuevoBloque();
+    const viñetas = (c.ejemplo || tramo.ejemplo || []).slice();
+    if (c.ejemploUltima && viñetas.length) viñetas[viñetas.length - 1] = c.ejemploUltima;
+    const tiraDe = lista => lista.map((v, i) => {
+      const final = i === lista.length - 1 && v.estado === "contento";
+      const otro = T.roles.find(x => x.id === v.quien && x.id !== r.id);
+      const intruso = v.quien === "intruso";
+      const quien = v.quien === "auditor" ? "auditor" : otro ? otro.id : r.id;
+      const estado = v.estado || "pensativo";
+      const etiqueta = intruso ? L.elIntruso : v.quien === "auditor" ? L.elAuditor : otro ? otro.nombre : "";
+      return `
+        <div class="vineta ${intruso ? "intruso" : etiqueta && !final ? "auditor" : ""} ${estado === "boom" ? "vineta-boom" : ""} ${final ? "vineta-final" : ""}">
+          <span class="sr-only">${esc(etiqueta || L.srTu)}${intruso ? "" : ", " + esc(L.srEstado[estado] || "")}: </span>
+          ${v.texto ? `<div class="bocadillo">${tx(v.texto)}</div>` : ""}
+          <div class="vineta-img"><img src="${intruso ? "img/intruso.webp" : img(quien, estado)}" alt=""${intruso ? ' width="430" height="600"' : wh(quien, estado)}>${etiqueta ? `<span class="quien" aria-hidden="true">${esc(etiqueta)}</span>` : ""}</div>
+          ${estado === "boom" ? explosionFija() : ""}
+          ${v.pie ? `<div class="pie">${tx(v.pie)}</div>` : `<span class="num-vineta" aria-hidden="true">${i + 1}</span>`}
+          ${v.sigue || v.viene ? retoma(v.sigue ? "sigue" : "viene", v.sigue || v.viene) : ""}
+        </div>`;
+    }).join("");
+    const tira = tiraDe(viñetas);
+    const extra = c.ejemploExtra && (c.ejemploExtra.vinetas || []).length ? c.ejemploExtra : null;
+    const k = clave(r.id, m.id, tramoId);
+    const comun = tramo.comun || {};
+    const resp = c.respuestas || {};
+    // En los roles no técnicos (rol.llano) va primero lo del rol y lo común sale en llano; el detalle, plegado.
+    const llano = !!r.llano;
+    nuevoBloque();
+    const qas = (T.guia[tramoId] || []).map(g => {
+      const cm = comun[g.id];
+      const cmT = cm && typeof cm === "object" ? cm.t : cm;
+      const cmLlano = llano && cm && typeof cm === "object" && cm.llano ? cm.llano : "";
+      const marcoQ = cm && typeof cm === "object" && cm.marco ? cm.marco : [];
+      const chips = marcoQ.length ? `<div class="marco">${marcoQ.map(x => `<span>${esc(x)}</span>`).join("")}</div>` : "";
+      const rr = resp[g.id];
+      if (!cmT && !rr && !g.base) return "";
+      const delRol = rr ? `<p class="qa-rol"><span class="etq">${esc(r.nombre)}</span>${tx(rr)}</p>` : "";
+      const base = g.base ? `<span class="base">${esc(g.base)}</span> ` : "";
+      const cuerpoQa = llano
+        ? `${delRol}
+          ${cmLlano ? `<p class="qa-comun">${base}${tx(cmLlano)}</p><details class="qa-mas"><summary>${L.saberMas}</summary><p>${tx(cmT)}</p>${chips}</details>`
+            : cmT || base ? `<p class="qa-comun">${base}${cmT ? tx(cmT) : ""}</p>` : ""}`
+        : `<p>${base}${cmT ? tx(cmT) : ""}</p>
+          ${delRol}`;
+      return `
+        <div class="qa ${g.id === "fiar" ? "fiar" : ""} ${llano ? "qa-llano" : ""}">
+          <h5>${esc(g.q)}</h5>
+          ${cuerpoQa}
+          ${tramoId === "seguro" ? empresaQA(g.id, m.id) : ""}
+          ${llano ? "" : chips}
+        </div>`;
+    }).join("");
+    const alDia = [tramo.alDia, c.alDia].filter(Boolean).join(" ");
+    const notasRol = (r.notas && r.notas[m.id]) || [];
+    const notas = REVISION && (tramo.previsto || notasRol.length) ? `<div class="notas"><strong>${L.notasRevision}</strong>
+      ${tramo.previsto ? `<ul>${tramo.previsto.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}
+      ${notasRol.length ? `<strong style="margin-top:8px">${L.paraRol(esc(r.nombre))}</strong><ul>${notasRol.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}</div>` : "";
+    return `
+      ${tramoId === "implantar" ? avisoRol(r, m.id === T.modulos[0].id ? "completo" : "breve") : ""}
+      ${notas}
+      ${c.lorem ? `<span class="provisional">${L.textoProvisional}</span>` : ""}
+      ${qas.trim() ? `<div class="bloque"><h4>${tramoId === "uso" ? L.antesUsarlo : tramoId === "implantar" ? L.antesImplantar : L.antesMeter}</h4><div class="qas">${qas}</div>${alDia ? (llano ? `<details class="al-dia"><summary>${L.alDia(esc(T.revisado || "")).replace(/:$/, "")}</summary><p>${tx(alDia)}</p></details>` : `<p class="al-dia"><strong>${L.alDia(esc(T.revisado || ""))}</strong> ${tx(alDia)}</p>`) : ""}</div>` : ""}
+      ${tira ? `<div class="bloque"><h4>${L.ejemplo}</h4><div class="tira">${tira}</div></div>` : ""}
+      ${extra ? `<div class="bloque"><h4>${esc(extra.titulo || L.otroCaso)}</h4><div class="tira">${tiraDe(extra.vinetas)}</div></div>` : ""}
+      ${nuevoBloque()}${c.ideas ? `<div class="bloque"><h4>${L.ideas}</h4><ol class="ideas">${c.ideas.map(x => `<li><span>${tx(x)}</span></li>`).join("")}</ol></div>` : ""}
+      ${(c.preguntas || []).length >= PREGUNTAS_POR_EXAMEN ? `<div class="bloque bloque-examen"><h4>${L.examen}</h4><div class="examen" data-k="${k}" data-mod="${m.id}" data-tramo="${tramoId}"></div></div>` : ""}
+      ${ampliar}`;
+  }
+
+  document.getElementById("casilla").addEventListener("input", e => {
+    if (e.target.id !== "nombre-dip") return;
+    guardado.nombre = e.target.value.slice(0, 80); guardar();
+    for (const id of ["dip-nombre", "nombre-imp"]) { const el = document.getElementById(id); if (el) el.textContent = guardado.nombre; }
+    const dn = document.getElementById("dip-nombre"); if (dn) dn.className = "dip-nombre " + tamNombre(guardado.nombre);
+  });
+  document.getElementById("casilla").addEventListener("click", e => {
+    const cont = e.currentTarget;
+    if (e.target.closest("[data-imprimir-diploma]")) { imprimirDiploma(); return; }
+    if (e.target.closest("[data-confeti]")) { confeti(); return; }
+    const t = e.target.closest("[data-rol]");
+    if (t) { cambiarRol(t.dataset.rol); return; }
+    const n = e.target.closest("[data-casilla-nav]");
+    if (n) { n.dataset.casillaNav === "tablero" ? aTablero() : ir(+n.dataset.casillaNav); return; }
+    const it = e.target.closest("[data-ir-tramo]");
+    if (it) { cambiarTramo(it.dataset.irTramo, true); return; }
+    const p = e.target.closest(".pestana");
+    if (p) { cambiarTramo(p.dataset.tramo, false); return; }
+    const b = e.target.closest("[data-accion]");
+    if (b) accionExamen(b.closest(".examen"), b.dataset.accion, b.dataset.i);
+  });
+
+  /* ---------- Examen ---------- */
+  function nuevoIntento(el) {
+    const m = T.modulos.find(x => x.id === el.dataset.mod);
+    const banco = m.tramos[el.dataset.tramo].porRol[rol().id].preguntas;
+    return {
+      fase: "pregunta", i: 0, aciertos: 0, respuestas: [],
+      preguntas: barajar(banco).slice(0, PREGUNTAS_POR_EXAMEN).map(p => ({
+        q: p.q, e: p.e, o: barajar(p.o.map((t, idx) => ({ t, ok: idx === 0 })))
+      }))
+    };
+  }
+  function pintarExamen(el) {
+    const k = el.dataset.k;
+    const st = examenes[k] || { fase: "inicio" };
+    const antes = !!guardado.ok[k];
+    const r = rol();
+    if (st.fase === "inicio") {
+      el.innerHTML = `
+        <div class="examen-cab"><strong>${L.nPreguntas(PREGUNTAS_POR_EXAMEN)}</strong>${antes ? `<span>${media(el.dataset.tramo, true)}${L.conseguida}</span>` : ""}</div>
+        <p style="margin:0">${L.unaCorrecta} ${T.aprobado >= PREGUNTAS_POR_EXAMEN ? L.hayQueAcertar(PREGUNTAS_POR_EXAMEN) : L.conAciertos(T.aprobado)} ${L.cadaIntento} <span class="nadie">${L.nadieVeNota}</span></p>
+        <div class="botones"><button class="btn" data-accion="empezar">${antes ? L.repetir : L.empezar}</button></div>`;
+      return;
+    }
+    if (st.fase === "fin") {
+      const ok = st.aciertos >= T.aprobado;
+      // La última pregunta sigue a la vista, con su explicación; el resultado va justo debajo.
+      el.innerHTML = (st.preguntas ? htmlPregunta(st) : "") + `
+        <div class="resultado" tabindex="-1" style="margin-top:18px">
+          <img src="${img(r.id, ok ? "contento" : "triste")}" alt="">
+          <div><div class="nota">${st.aciertos}/${PREGUNTAS_POR_EXAMEN}</div>
+          <p style="margin:6px 0 0">${ok ? L.mediaConseguida : L.noSuperado}</p></div>
+          ${ok ? media(el.dataset.tramo, true, st.recien) : ""}
+        </div>
+        ${ok ? "" : antes ? `<div class="aviso-repetir" style="border-left-color:var(--oro)">${L.yaConseguida}</div>` : `<div class="aviso-repetir"><strong>${L.tienesQueRepetir}</strong> ${L.paraSuperarlo(T.aprobado, PREGUNTAS_POR_EXAMEN)}</div>`}
+        <div class="botones">${ok ? botonSeguir(el.dataset.mod, el.dataset.tramo) : ""}<button class="btn ${ok ? "sec" : ""}" data-accion="empezar">${ok ? L.otraVez : L.repetirExamen}</button></div>`;
+      return;
+    }
+    el.innerHTML = htmlPregunta(st) + (st.respuestas[st.i] !== undefined ? `
+        <div class="botones"><button class="btn" data-accion="siguiente">${L.siguiente}</button></div>` : "");
+  }
+  function htmlPregunta(st) {
+    nuevoBloque();
+    const p = st.preguntas[st.i];
+    const resp = st.respuestas[st.i];
+    const progreso = `<div class="progreso">${st.preguntas.map((_, i) =>
+      `<i class="${st.respuestas[i] === true ? "ok" : st.respuestas[i] === false ? "ko" : i === st.i ? "ahora" : ""}"></i>`).join("")}</div>`;
+    return `
+      <div class="examen-cab"><strong>${L.preguntaDe(st.i + 1, PREGUNTAS_POR_EXAMEN)}</strong>${progreso}</div>
+      <p class="pregunta" tabindex="-1">${tx(p.q)}</p>
+      <div class="opciones">
+        ${p.o.map((o, i) => {
+          let cls = "";
+          if (resp !== undefined) { if (o.ok) cls = "ok"; else if (i === st.elegida) cls = "ko"; }
+          return `<button class="opcion ${cls}" data-accion="responder" data-i="${i}" ${resp !== undefined ? "disabled" : ""}>
+            <span class="letra" aria-hidden="true">${resp !== undefined && o.ok ? "✓" : resp !== undefined && i === st.elegida ? "✗" : "ABCD"[i]}</span><span class="sr-only">${"ABCD"[i]}. </span><span>${tx(o.t)}</span>${resp !== undefined && o.ok ? `<span class="sr-only">${L.correctaSr}</span>` : resp !== undefined && i === st.elegida ? `<span class="sr-only">${L.tuRespuestaSr}</span>` : ""}</button>`;
+        }).join("")}
+      </div>
+      ${resp !== undefined ? `
+        <div class="explica" tabindex="-1"><strong>${resp ? L.bien : L.no}</strong> ${tx(p.e || "")}</div>` : ""}`;
+  }
+  function accionExamen(el, accion, i) {
+    const k = el.dataset.k;
+    let st = examenes[k];
+    if (accion === "empezar") {
+      st = examenes[k] = nuevoIntento(el);
+    } else if (accion === "responder" && st && st.respuestas[st.i] === undefined) {
+      const ok = st.preguntas[st.i].o[+i].ok;
+      st.respuestas[st.i] = ok; st.elegida = +i;
+      if (ok) st.aciertos++;
+      reaccionar(ok ? "contento" : "boom");
+      // Contestada la última: el examen se cierra y se guarda ya, sin botón intermedio.
+      if (st.i + 1 >= PREGUNTAS_POR_EXAMEN) {
+        st.fase = "fin";
+        if (st.aciertos >= T.aprobado && !guardado.ok[k]) {
+          st.recien = true;
+          guardado.ok[k] = true;
+          guardado.fechas = guardado.fechas || {};
+          guardado.fechas[k] = new Date().toISOString();
+          guardar();
+          const mm = modDe(el.dataset.mod), rr = rol().id;
+          document.querySelectorAll(".pestana").forEach(b => { const ic = b.querySelector(".media"); if (ic) ic.outerHTML = media(b.dataset.tramo, estadoPestana(rr, mm, b.dataset.tramo), b.dataset.tramo === el.dataset.tramo); });
+          const ci = +document.getElementById("casilla").dataset.i;
+          pintarMigas(ci);
+          document.getElementById("pie-nav").outerHTML = pieNav(ci);
+        }
+      }
+    } else if (accion === "siguiente" && st && st.fase === "pregunta") {
+      st.elegida = undefined;
+      if (st.i + 1 < PREGUNTAS_POR_EXAMEN) st.i++;
+    }
+    pintarExamen(el);
+    // Foco y anuncio a propósito tras cada cambio (teclado y lector de pantalla).
+    const anuncio = document.getElementById("anuncio");
+    if (st && st.fase === "fin" && accion === "responder") {
+      const ok = st.aciertos >= T.aprobado;
+      const p = st.preguntas[st.i];
+      const letra = "ABCD"[p.o.findIndex(o => o.ok)];
+      anuncio.textContent = `${st.respuestas[st.i] ? L.anuncioCorrecta : L.anuncioIncorrecta(letra)} ${p.e || ""} ${L.anuncioResultado(st.aciertos, PREGUNTAS_POR_EXAMEN)} ${ok ? L.mediaConseguida : L.anuncioRepetir(T.aprobado, PREGUNTAS_POR_EXAMEN)}`;
+      const res = el.querySelector(".resultado");
+      if (res) { res.focus({ preventScroll: true }); res.scrollIntoView({ block: "nearest", behavior: reducido ? "auto" : "smooth" }); }
+    } else if (accion === "responder" && st) {
+      const p = st.preguntas[st.i];
+      const letra = "ABCD"[p.o.findIndex(o => o.ok)];
+      anuncio.textContent = st.respuestas[st.i] ? `${L.anuncioCorrecta} ${p.e || ""}` : `${L.anuncioIncorrecta(letra)} ${p.e || ""}`;
+      el.querySelector(".explica")?.focus();
+    } else if (accion === "empezar" || accion === "siguiente") {
+      anuncio.textContent = `${L.preguntaDe(st.i + 1, PREGUNTAS_POR_EXAMEN)}.`;
+      el.querySelector(".pregunta")?.focus();
+    }
+    // Los destellos van en el bloque del examen, que no se repinta: duran siempre lo mismo
+    // aunque se pulse «Siguiente» enseguida.
+    const capa = el.closest(".bloque-examen") || el;
+    const c = capa.getBoundingClientRect();
+    if (accion === "responder" && st) {
+      const bien = st.respuestas[st.i] === true;
+      const op = el.querySelector(bien ? ".opcion.ok" : ".opcion.ko");
+      if (op) {
+        const r = op.getBoundingClientRect();
+        (bien ? celebrar : explotar)(capa, r.right - c.left - 48, r.top - c.top + r.height / 2);
+      }
+    }
+    // Examen superado: la media estrella se celebra y se pega en su sitio.
+    if (accion === "responder" && st && st.fase === "fin" && st.aciertos >= T.aprobado) {
+      const im = el.querySelector(".resultado img");
+      if (im) { const r = im.getBoundingClientRect(); setTimeout(() => celebrar(capa, r.right - c.left + 120, r.top - c.top + r.height / 2, media(el.dataset.tramo, true)), 450); }
+    }
+  }
+
+  /* ---------- Marcador ---------- */
+  let idEstrella = 0;
+  function estrella(izq, der) {
+    const id = "e" + (idEstrella++);
+    const d = "M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z";
+    return `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <defs><clipPath id="${id}l"><rect x="0" y="0" width="12" height="24"/></clipPath><clipPath id="${id}r"><rect x="12" y="0" width="12" height="24"/></clipPath></defs>
+      <path d="${d}" fill="var(--gris-estrella)"/>
+      ${izq ? `<path d="${d}" fill="var(--oro)" clip-path="url(#${id}l)"/>` : ""}
+      ${der ? `<path d="${d}" fill="var(--oro)" clip-path="url(#${id}r)"/>` : ""}
+    </svg>`;
+  }
+  function pintarMarcador() {
+    const total = T.modulos.length * 2;
+    document.getElementById("marcador").innerHTML = T.roles.map(r => {
+      let n = 0;
+      const est = T.modulos.map(m => {
+        const a = ganada(r.id, m.id, "uso"), b = ganada(r.id, m.id, "seguro");
+        n += a + b;
+        return `<span title="${esc(m.titulo)}">${estrella(a, b)}</span>`;
+      }).join("");
+      const pct = Math.round(n / total * 100);
+      const est2 = num(n / 2);
+      return `
+        <div class="fila ${r.id === guardado.rol ? "actual" : ""}" style="--c:${r.color}">
+          <img src="${img(r.id, pct === 100 ? "contento" : "pensativo")}" alt="">
+          <div class="nombre">${esc(r.nombre)}<small>${L.estrellasDe(est2, T.modulos.length)}</small></div>
+          <div class="estrellas" aria-label="${L.estrellasDe(est2, T.modulos.length)}">${est}</div>
+          <div class="pct">${pct}%</div>
+          <div class="barra"><i style="width:${pct}%"></i></div>
+        </div>`;
+    }).join("");
+  }
+  document.getElementById("reiniciar").addEventListener("click", () => {
+    if (!confirm(L.confirmarBorrar)) return;
+    guardado.ok = {}; guardado.pos = {}; guardado.salida = {}; guardado.fechas = {}; delete guardado.avisoEmpleado; delete guardado.celebrados; guardar();
+    Object.keys(examenes).forEach(k => delete examenes[k]);
+    pintarTodo();
+  });
+
+  /* ---------- Arranque ---------- */
+  function pintarTodo() {
+    pintarInsignia();
+    if (!vistaCasilla.hidden) {
+      const i = +document.getElementById("casilla").dataset.i;
+      if (i < 0) { rutear(); return; }
+      const y = scrollY; pintarCasilla(i); scrollTo(0, y);
+    } else { pintarTablero(); pintarMarcador(); }
+  }
+  // Textos fijos de la página, título y botón de idioma.
+  document.querySelectorAll("[data-ui]").forEach(el => { el.textContent = L[el.dataset.ui]; });
+  document.querySelectorAll("[data-ui-aria]").forEach(el => { el.setAttribute("aria-label", L[el.dataset.uiAria]); });
+  document.title = L.tituloPagina;
+  const ponMeta = (sel, v) => { const el = document.querySelector(sel); if (el) el.setAttribute(el.tagName === "LINK" ? "href" : "content", v); };
+  ponMeta('meta[name="description"]', L.descPagina);
+  ponMeta('meta[property="og:title"]', L.tituloPagina);
+  ponMeta('meta[property="og:description"]', L.descPagina);
+  if (IDIOMA === "en") {
+    const can = document.querySelector('link[rel="canonical"]');
+    if (can) { ponMeta('link[rel="canonical"]', can.href.split("?")[0] + "?lang=en"); ponMeta('meta[property="og:url"]', can.href); ponMeta('meta[property="og:locale"]', "en_GB"); }
+    document.getElementById("sobre").innerHTML = L.sobreHtml;
+    document.getElementById("pie-privacidad").textContent = L.piePrivacidad;
+    document.getElementById("pie-uso").textContent = L.pieUso;
+    document.getElementById("pie-error").textContent = L.pieError;
+  }
+  if (T.intro.privacidad) document.getElementById("pie-privacidad").textContent = T.intro.privacidad;
+  if (window.SUGERIR_INGLES) document.getElementById("otro-idioma").hidden = false;
+  document.querySelectorAll("[data-idioma]").forEach(b => {
+    b.setAttribute("aria-pressed", b.dataset.idioma === IDIOMA);
+    b.addEventListener("click", () => {
+      if (b.dataset.idioma === IDIOMA) return;
+      try { localStorage.setItem("viaje-ia-idioma", b.dataset.idioma); } catch (e) {}
+      const u = new URL(location.href);
+      if (u.searchParams.has("lang")) { u.searchParams.delete("lang"); location.replace(u.href); } else location.reload();
+    });
+  });
+  document.getElementById("titulo").textContent = T.titulo;
+  document.getElementById("revisado").textContent = T.revisado ? L.revisado(T.revisado, T.version) : "";
+  document.getElementById("subtitulo").textContent = T.subtitulo;
+  pintarInsignia();
+  rutear();
+};
+// Carga el contenido del idioma elegido y arranca.
+(() => {
+  const s = document.createElement("script");
+  // Sube este número cada vez que cambie el contenido: obliga al navegador a bajar el nuevo.
+  const VERSION_CONTENIDO = "4.0";
+  s.src = (window.IDIOMA === "en" ? "contenido.en.js" : "contenido.js") + "?v=" + VERSION_CONTENIDO;
+  s.onload = window.arrancarViaje;
+  s.onerror = () => {
+    const t = document.getElementById("tablero");
+    const en = window.IDIOMA === "en";
+    if (t) t.parentElement.outerHTML = `<div class="error-carga" role="alert"><strong>${en ? "The course could not be loaded." : "No se ha podido cargar el curso."}</strong> ${en ? "Reload the page. If it still fails, your network may be blocking part of it." : "Recarga la página. Si sigue sin salir, puede que tu red esté bloqueando una parte."}</div>`;
+  };
+  document.body.appendChild(s);
+})();
+</script>
+</body>
+</html>

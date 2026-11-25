@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI training for companies: a free, role-based course · A Journey Through AI</title>
+<meta name="description" content="A free AI course for your staff: role-based, about an hour, no sign-up, no cookies. Set in Spain and the EU framework. How to use it as one AI literacy measure under Article 4.">
+<meta name="author" content="Daniel Martín · epifaneia.dev">
+<meta name="theme-color" content="#f5efe6">
+<link rel="canonical" href="https://epifaneia.dev/tutorial/for-companies.html">
+<link rel="alternate" hreflang="es" href="https://epifaneia.dev/tutorial/empresas.html">
+<link rel="alternate" hreflang="en" href="https://epifaneia.dev/tutorial/for-companies.html">
+<link rel="alternate" hreflang="x-default" href="https://epifaneia.dev/tutorial/empresas.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI training for companies: a free, role-based course">
+<meta property="og:description" content="A Journey Through AI: a free, role-based course with no sign-up, so your staff get more out of AI without putting data at risk. Set in Spain and the EU framework.">
+<meta property="og:url" content="https://epifaneia.dev/tutorial/for-companies.html">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icono-32.png">
+<link rel="apple-touch-icon" href="img/icono-180.png">
+<meta property="og:image" content="https://epifaneia.dev/tutorial/img/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Fuentes servidas desde esta web (licencia OFL, en fonts/OFL.txt): sin peticiones a terceros */
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-stretch: 100%; font-display: swap; src: url(fonts/bricolage-grotesque-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+:root{
+  --papel:#f5efe6; --tarjeta:#fffaf3; --tinta:#1e2230; --suave:#6b6558; --linea:#e3d9c9;
+  --camino:#e9dcc6; --camino-borde:#d8c6a8;
+  --ok:#2f8f57; --ko:#b8432f; --oro:#e0a526; --gris-estrella:#d9cfbf;
+  --rol:#9a7b55;
+  --radio:18px;
+  --sombra:0 1px 0 rgba(30,34,48,.04), 0 8px 24px -12px rgba(30,34,48,.18);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",Inter,sans-serif;line-height:1.1;margin:0}
+p{margin:0 0 14px}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid var(--rol);outline-offset:2px;border-radius:4px}
+.envoltura{max-width:860px;margin:0 auto;padding:0 16px}
+
+/* ---------- Barra superior ---------- */
+.barra{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0}
+.barra .marca{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:18px;text-decoration:none}
+.barra .idioma{font-size:13px;font-weight:600;color:var(--suave);text-decoration:none;border:2px solid var(--linea);border-radius:999px;padding:5px 12px;background:var(--tarjeta);white-space:nowrap}
+.barra .idioma:hover{border-color:var(--rol);color:var(--tinta)}
+
+/* ---------- Piezas del curso ---------- */
+.kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+.btn{display:inline-block;border:2px solid var(--tinta);border-radius:999px;padding:10px 18px;font-weight:600;background:var(--tinta);color:#fff;text-decoration:none}
+.btn.sec{background:transparent;color:var(--tinta)}
+.btn:hover{transform:translateY(-1px)}
+.aviso-fecha{display:flex;gap:12px;align-items:flex-start;margin:18px 0;padding:12px 16px;border:2px dashed var(--suave);border-radius:12px;background:var(--tarjeta);font-size:15px}
+.aviso-fecha p{margin:0}
+.tarjeta{background:var(--tarjeta);border:2px solid var(--linea);border-radius:var(--radio);box-shadow:var(--sombra);padding:20px}
+
+/* ---------- Cabecera ---------- */
+.cabecera{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;padding:22px 0 8px}
+.cabecera h1{font-weight:800;font-size:clamp(30px,6.2vw,50px);margin:10px 0 16px;letter-spacing:-.01em}
+.cabecera .entrada{font-size:18px;max-width:58ch}
+.cabecera img{width:190px;height:auto}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* ---------- Secciones ---------- */
+section{padding:34px 0 0}
+section>h2{font-weight:800;font-size:clamp(23px,4.4vw,31px);margin:6px 0 14px}
+section>p,section>ul,section>ol{max-width:70ch}
+.fuente{font-size:13px;color:var(--suave);margin:0}
+section>.tras{margin-top:14px}
+
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:6px}
+.datos .cifra{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:40px;line-height:1;display:block;margin-bottom:8px;color:var(--rol)}
+.datos p{font-size:15px;margin-bottom:10px}
+.datos .tarjeta{display:flex;flex-direction:column}
+.datos .fuente{margin-top:auto}
+
+blockquote.cita{margin:16px 0;padding:18px 20px;background:var(--tarjeta);border:2px solid var(--linea);border-left:6px solid var(--rol);border-radius:12px;font-size:17px;line-height:1.5;max-width:74ch}
+blockquote.cita p{margin:0 0 10px}
+blockquote.cita footer{font-size:13px;color:var(--suave);line-height:1.45}
+
+.pasos{list-style:none;margin:6px 0 0;padding:0;counter-reset:paso;display:grid;gap:12px;max-width:none}
+.pasos li{counter-increment:paso;position:relative;padding:18px 20px 18px 68px}
+.pasos li::before{content:counter(paso);position:absolute;left:18px;top:16px;width:36px;height:36px;border-radius:50%;background:var(--tinta);color:#fff;display:grid;place-items:center;font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:18px}
+.pasos h3{font-size:18px;font-weight:600;margin-bottom:6px}
+.pasos p{margin:0;font-size:15px}
+
+.tabla{margin-top:6px;padding:6px 18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:12px 10px 12px 0;border-bottom:1px solid var(--linea)}
+th{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
+tbody tr:last-child td{border-bottom:0}
+td.rol{font-weight:600;white-space:nowrap}
+td.tiempo{white-space:nowrap;font-weight:600}
+
+.lista{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:10px}
+.lista li{padding:14px 18px;background:var(--tarjeta);border:2px solid var(--linea);border-radius:12px}
+.lista strong{display:block;margin-bottom:2px}
+.lista.no li{border-left:6px solid var(--ko)}
+.lista.si li{border-left:6px solid var(--ok)}
+
+.permiso{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:600;font-size:clamp(19px,3.6vw,23px);line-height:1.3;max-width:34ch;margin:0}
+
+.cierre{margin:40px 0 0;padding:26px 22px;text-align:center;background:var(--camino);border:2px solid var(--camino-borde);border-radius:var(--radio)}
+.cierre h2{font-weight:800;font-size:clamp(22px,4.4vw,28px);margin-bottom:8px}
+.cierre p{margin:0 auto;max-width:52ch}
+.cierre .acciones{justify-content:center}
+
+.pie{margin:34px 0 0;padding:20px 0 40px;border-top:2px solid var(--linea);font-size:13px;color:var(--suave)}
+.pie p{margin:0 0 6px}
+
+@media (max-width:640px){
+  .cabecera{grid-template-columns:1fr}
+  .cabecera img{display:none}
+  .cabecera .entrada{font-size:17px}
+  .pasos li{padding:16px 16px 16px 60px}
+  .pasos li::before{left:14px}
+  .tabla{padding:4px 16px}
+  table,tbody,tr,td{display:block}
+  thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  tr{padding:14px 0;border-bottom:1px solid var(--linea)}
+  tbody tr:last-child{border-bottom:0}
+  td{border:0;padding:2px 0}
+  td.rol{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:18px}
+  td[data-t]::before{content:attr(data-t) ": ";font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--suave)}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .barra .idioma,.acciones,.cabecera img{display:none}
+  .tarjeta,.lista li,blockquote.cita,.cierre{box-shadow:none;break-inside:avoid}
+  section{padding-top:20px}
+}
+</style>
+</head>
+<body>
+<div class="envoltura">
+
+<nav class="barra" aria-label="Navigation">
+  <a class="marca" href="index.html?lang=en">A Journey Through AI</a>
+  <a class="idioma" href="empresas.html" hreflang="es" lang="es">Español</a>
+</nav>
+
+<header class="cabecera">
+  <div>
+    <span class="kicker">For companies · epifaneia.dev</span>
+    <h1>AI training for your staff, free and built around roles</h1>
+    <p class="entrada">‘A Journey Through AI’ is a free online course that teaches people to use AI at work, and to do it without putting data at risk, with a different route for each role. For a company, it gives everyone a shared grounding in about an hour and leaves a training record that each person can hand in when they finish.</p>
+    <div class="acciones">
+      <a class="btn" href="index.html?lang=en">Start the course</a>
+      <a class="btn sec" href="kit-responsable.html" hreflang="es">Organiser's kit (in Spanish)</a>
+    </div>
+  </div>
+  <img src="img/management-contento.webp" width="375" height="600" alt="">
+</header>
+
+<main>
+
+<div class="aviso-fecha">
+  <p><strong>The course is set in Spain and in the European framework.</strong> The examples, the regulators and the employment law are Spanish; the AI Act and the GDPR are European. If your company is based elsewhere, most of the practical advice carries over, but not every legal reference will be yours.</p>
+</div>
+
+<section id="why-now">
+  <span class="kicker">Why now</span>
+  <h2>Three figures from 2026</h2>
+  <div class="datos">
+    <div class="tarjeta">
+      <span class="cifra">82%</span>
+      <p>of office workers in Spain use AI. Of those, 82% use tools their company hasn't provided, and don't tell it. 56% have had no training.</p>
+      <p class="fuente">Source: <a href="https://www.cegid.com/ib/es/prensa/la-ia-en-la-sombra-el-82-de-los-empleados-en-espana-ya-la-utiliza-y-el-mismo-porcentaje-lo-hace-sin-informar-a-su-empresa/" hreflang="es">Cegid</a>, survey of 501 people, May and June 2026 (in Spanish).</p>
+    </div>
+    <div class="tarjeta">
+      <span class="cifra">35%</span>
+      <p>of Spanish SMEs plan to step up training, against 79% of large companies. A shortage of skilled staff is the most-cited obstacle to adopting AI.</p>
+      <p class="fuente">Source: <a href="https://www.bde.es/wbe/es/noticias-eventos/blog/asi-adoptan-la-ia-las-empresas-espanolas-como-ven-el-impacto-actual-y-a-futuro.html" hreflang="es">Banco de España</a> (in Spanish).</p>
+    </div>
+    <div class="tarjeta">
+      <span class="cifra">Art.&nbsp;4</span>
+      <p>The EU AI Act requires companies that use AI to ‘take measures to support the development of AI literacy of their staff’. National authorities have supervised it since 2 August 2026.</p>
+      <p class="fuente">Sources: <a href="http://data.europa.eu/eli/reg/2026/1744/oj">Regulation (EU) 2026/1744</a> and the <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-talent-skills-and-literacy">European Commission</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="what-the-law-asks">
+  <span class="kicker">What the law asks</span>
+  <h2>Article 4, as written</h2>
+  <p>Article 4 of the EU AI Act was amended in July 2026. This is paragraph 1 as it now stands:</p>
+  <blockquote class="cita" cite="http://data.europa.eu/eli/reg/2026/1744/oj">
+    <p>‘Providers and deployers of AI systems shall take measures to support the development of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf, taking into account their technical knowledge, experience, education and training and the context the AI systems are to be used in, and considering the persons or groups of persons on whom the AI systems are to be used. This obligation does not require providers or deployers to guarantee any specific level of AI literacy of any individual.’</p>
+    <footer>Article 4(1) of Regulation (EU) 2024/1689, as replaced by <a href="http://data.europa.eu/eli/reg/2026/1744/oj">Regulation (EU) 2026/1744</a> (Official Journal of the European Union, 24 July 2026).</footer>
+  </blockquote>
+  <p>In plain terms: if your company uses an AI system in its work, it is a ‘deployer’ and has to do something to help its people understand the AI they work with. What it does should fit each job and each use. The law doesn't prescribe a course, a number of hours or a test.</p>
+  <div class="aviso-fecha">
+    <p>This course can be <strong>one of the measures</strong> your company takes on AI literacy. <strong>It does not prove compliance on its own</strong>, and no course does.</p>
+  </div>
+  <p>A separate point, for companies with staff in Spain: if you use AI to make decisions about people (shifts, hiring, appraisals), you have information duties of your own, towards workers' representatives (<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a64" hreflang="es">Article 64.4.d of the Workers' Statute</a>, the Estatuto de los Trabajadores) and towards each worker (<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-19200" hreflang="es">Royal Decree 723/2026</a>, in force since 5 October 2026; in Spanish). The course covers them in the Management and IT journeys.</p>
+</section>
+
+<section id="how-to-use-it">
+  <span class="kicker">How to use it in your company</span>
+  <h2>Four steps</h2>
+  <ol class="pasos">
+    <li class="tarjeta">
+      <h3>Decide which role each person takes</h3>
+      <p>There are five: Employee, Management, Data analysis, Marketing and IT. If in doubt, choose Employee: the basics are there and they apply to any job. The table below says who each one is for.</p>
+    </li>
+    <li class="tarjeta">
+      <h3>Set aside an hour, or two sittings</h3>
+      <p>An hour of working time is enough for Employee, Data analysis and Marketing. Management and IT need about two hours. It can be split into two sessions: progress is saved in the browser, so people need to come back on the same device and the same browser.</p>
+    </li>
+    <li class="tarjeta">
+      <h3>Ask for the training record</h3>
+      <p>On finishing, each person can print, or save as a PDF, a training record with their name, their role, each stop passed with its date, and the content version. Ask for it and file it with your other training records. It is the only trace there is: the course doesn't notify anyone.</p>
+    </li>
+    <li class="tarjeta">
+      <h3>Add what the course can't know</h3>
+      <p>The course explains the general framework. Your policy, your tools and your contacts have to come from you. The details are <a href="#add">further down</a>.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="itinerary">
+  <span class="kicker">Itinerary by role</span>
+  <h2>Who does what, and how long it takes</h2>
+  <p>The journey has five stops: the chat, the single-task tool, AI connected to company data, agents, and the custom-built tool. Each stop has two paths, ‘Get the most out of it’ and ‘Do it safely’. Management and IT have a third, ‘Roll it out’. Each path takes about seven minutes: short answers, a worked example told as a comic strip, three key ideas, links to official sources and a five-question quiz. To pass, you need all five right.</p>
+  <div class="tarjeta tabla">
+    <table>
+      <thead>
+        <tr><th scope="col">Role</th><th scope="col">Who it's for</th><th scope="col">Paths</th><th scope="col">Time</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rol">Employee</td>
+          <td data-t="Who it's for">Administration, customer service, operations. The people who get the day-to-day work done.</td>
+          <td data-t="Paths">10: ‘Get the most out of it’ and ‘Do it safely’ at all five stops.</td>
+          <td class="tiempo" data-t="Time">1 h 10 min</td>
+        </tr>
+        <tr>
+          <td class="rol">Management</td>
+          <td data-t="Who it's for">Department heads, middle managers, HR. The people who design how work gets done.</td>
+          <td data-t="Paths">15: those two plus ‘Roll it out’.</td>
+          <td class="tiempo" data-t="Time">2 h</td>
+        </tr>
+        <tr>
+          <td class="rol">Data analysis</td>
+          <td data-t="Who it's for">Team leaders, analysts, controllers. The people who measure the results.</td>
+          <td data-t="Paths">10: ‘Get the most out of it’ and ‘Do it safely’.</td>
+          <td class="tiempo" data-t="Time">1 h 15 min</td>
+        </tr>
+        <tr>
+          <td class="rol">Marketing</td>
+          <td data-t="Who it's for">Marketing, communications, content, design.</td>
+          <td data-t="Paths">10: ‘Get the most out of it’ and ‘Do it safely’.</td>
+          <td class="tiempo" data-t="Time">1 h 10 min</td>
+        </tr>
+        <tr>
+          <td class="rol">IT</td>
+          <td data-t="Who it's for">Systems, development, support, cybersecurity.</td>
+          <td data-t="Paths">15: those two plus ‘Roll it out’.</td>
+          <td class="tiempo" data-t="Time">2 h</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="fuente tras">Times are approximate. Anyone who retakes a quiz will need a little longer.</p>
+</section>
+
+<section id="add">
+  <span class="kicker">What you need to add</span>
+  <h2>Three things only your company knows</h2>
+  <ul class="lista si">
+    <li><strong>Your AI usage policy.</strong> What is allowed, what for, and which data never goes into an AI tool. If you don't have one yet, a single page is enough to start with.</li>
+    <li><strong>Your approved tools.</strong> The course explains each kind of tool. Which one is approved in your company, and which account people sign in with, is for you to say.</li>
+    <li><strong>Who to tell when something goes wrong.</strong> A name or a mailbox: your data protection officer, IT or your incident channel. The course teaches people to speak up early; what's missing is who to.</li>
+  </ul>
+  <p class="tras">You can hand all this out on one sheet with the invitation. The <a href="kit-responsable.html" hreflang="es">organiser's kit (in Spanish)</a> has an invitation email, talking points for a kick-off meeting and a record sheet.</p>
+</section>
+
+<section id="is-not">
+  <span class="kicker">What the course is not</span>
+  <h2>Better to know beforehand</h2>
+  <ul class="lista no">
+    <li><strong>It isn't official training, and it isn't set up for subsidised-training schemes.</strong> It doesn't award a qualification. The certificate at the end is for information only, and the training record is generated in each person's browser: a record, not a verifiable certificate.</li>
+    <li><strong>It doesn't track who finishes.</strong> I don't know who starts it or who completes it, and neither does your company, except through the training record each person gives you. There is no package for your learning platform either.</li>
+    <li><strong>It doesn't replace your data protection officer or your legal advisers.</strong> It explains the general framework in Spain and Europe as at its review date. It doesn't know your case.</li>
+  </ul>
+  <div class="aviso-fecha">
+    <p>Content: version 4.0, reviewed on 24 November 2026. I review it on the first Monday of each quarter and whenever a rule changes.</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <span class="kicker">Privacy</span>
+  <h2>Nothing leaves each person's browser</h2>
+  <p>The course uses no cookies, asks for no sign-up and loads nothing from third parties: no analytics and no external fonts. Progress, and the name each person types for their certificate, are stored only in their own browser. They don't reach me or anyone else.</p>
+  <p>So there are no accounts to create and no staff data to hand over in order to use it.</p>
+</section>
+
+<section id="use">
+  <span class="kicker">Use and permissions</span>
+  <h2>What you can do with the course</h2>
+  <p class="permiso">You can use it in your company and link to it without asking permission. You can't sell it or pass it off as your own.</p>
+</section>
+
+<section id="tailored">
+  <span class="kicker">If you'd like it set up for you</span>
+  <h2>Two things I can do for your company</h2>
+  <p>The course works as it is; you don't need to talk to me to use it. If you need more, there are two things I do:</p>
+  <ul class="lista">
+    <li><strong>Set up the ‘At your organisation’ block.</strong> The course has room for a section specific to each company: its name, the approved tool at each stop, the stops required for each role and the people to contact. I can set it up with your tools and your contacts.</li>
+    <li><strong>Build the tool you need.</strong> It's my day job: custom AI tools for companies.</li>
+  </ul>
+  <p class="tras">I'm Daniel Martín. You'll find me at <a href="https://epifaneia.dev/">epifaneia.dev</a>. <a href="mailto:danielmartin@epifaneia.dev?subject=A%20Journey%20Through%20AI%20for%20my%20company">Email me</a> and we can talk it through.</p>
+</section>
+
+<div class="cierre">
+  <h2>Try it before you send it round</h2>
+  <p>Do the first stop in your own role. It takes fifteen to twenty minutes, and you'll know whether it suits your people.</p>
+  <div class="acciones">
+    <a class="btn" href="index.html?lang=en">Start the course</a>
+    <a class="btn sec" href="kit-responsable.html" hreflang="es">Organiser's kit (in Spanish)</a>
+  </div>
+</div>
+
+</main>
+
+<footer class="pie">
+  <p>A Journey Through AI · content version 4.0, reviewed on 24 November 2026 · Daniel Martín, <a href="https://epifaneia.dev/">epifaneia.dev</a></p>
+  <p>This page is for information. It is not legal advice.</p>
+</footer>
+
+</div>
+</body>
+</html>
